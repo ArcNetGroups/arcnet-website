@@ -1,0 +1,174 @@
+{
+    "Header": {
+      "title": "Redefining social media with Arcnet",
+      "paragraph": "We are offering a singular, decentralized platform “Arcnet” that integrates various social dApps enabling users to carry forward their achievements, influence, and followers seamlessly across different services.."
+    },
+    "About": {
+      "paragraph": "Our mission is to streamline the social media experience by consolidating multiple applications into a single, unified interface. This approach eliminates the need for users to navigate through numerous apps, each requiring separate account management. Instead, our platform facilitates a seamless transition between different social dApps, allowing users to maintain a single profile. We call it “Arcnet” because it’s a network of unified social dapps.",
+      "Why": [
+        "Unified Profile Across Platforms",
+        "Ad Revenue Sharing(Earn from Ads You Love)",
+        "Profile Ownership",
+        "Data Security and Integrity"
+      ],
+      "Why2": [
+        "Augmented Reality (AR) Tweet Integration",
+        "NFT Marketplace",
+        "Creator Coins",
+        "Content Tipping"
+      ]
+    },
+    "Gallery": [
+      {
+        "title": "Project Title",
+        "largeImage": "img/portfolio/01-large.jpg",
+        "smallImage": "img/portfolio/01-small.jpg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "img/portfolio/02-large.jpg",
+        "smallImage": "img/portfolio/02-small.jpg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "img/portfolio/03-large.jpg",
+        "smallImage": "img/portfolio/03-small.jpg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "img/portfolio/04-large.jpg",
+        "smallImage": "img/portfolio/04-small.jpg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "img/portfolio/05-large.jpg",
+        "smallImage": "img/portfolio/05-small.jpg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "img/portfolio/06-large.jpg",
+        "smallImage": "img/portfolio/06-small.jpg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "img/portfolio/07-large.jpg",
+        "smallImage": "img/portfolio/07-small.jpg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "img/portfolio/08-large.jpg",
+        "smallImage": "img/portfolio/08-small.jpg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "img/portfolio/09-large.jpg",
+        "smallImage": "img/portfolio/09-small.jpg"
+      }
+    ],
+    "Services": [
+      {
+        "icon": "fa fa-wordpress",
+        "name": "AI algorithms",
+        "text": "One of our key goals is to integrate AI algorithms into our transaction processing system. It would realise our dream of faster transaction speeds and lower costs for users."
+      },
+      {
+        "icon": "fa fa-cart-arrow-down",
+        "name": "AI mining",
+        "text": "By replacing traditional miners and validators with advanced AI algorithms capable of solving complex mathematical problems at lightning speed, we aim to transform the blockchain's efficiency."
+      },
+      {
+        "icon": "fa fa-cloud-download",
+        "name": "Quantum Computing",
+        "text": "Furthermore, by harnessing the power of Quantum Computing, we plan to further accelerate these processes, reducing transaction times and costs. This strategic shift not only promises to make our platform faster and more affordable."
+      }
+    ],
+    "Testimonials": [
+      {
+        "img": "img/testimonials/01.jpg",
+        "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+        "name": "John Doe"
+      },
+      {
+        "img": "img/testimonials/02.jpg",
+        "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+        "name": "Johnathan Doe"
+      },
+      {
+        "img": "img/testimonials/03.jpg",
+        "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+        "name": "John Doe"
+      },
+      {
+        "img": "img/testimonials/04.jpg",
+        "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+        "name": "Johnathan Doe"
+      },
+      {
+        "img": "img/testimonials/05.jpg",
+        "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+        "name": "John Doe"
+      },
+      {
+        "img": "img/testimonials/06.jpg",
+        "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+        "name": "Johnathan Doe"
+      }
+    ],
+    "Team": [
+      {
+        "img": "img/team/01.jpg",
+        "name": "Henry Giwa",
+        "job": "Founder"
+      },
+      {
+        "img": "img/team/02.jpg",
+        "name": "Meghna Malasi",
+        "job": "Chief Technical officer"
+      },
+      {
+        "img": "img/team/03.jpg",
+        "name": "Kaushal Desai",
+        "job": "Blockchain developer"
+      },
+      {
+        "img": "img/team/05.jpg",
+        "name": "Yuvan",
+        "job": "Frontend/UI/ML"
+      },
+      {
+        "img": "img/team/04.jpg",
+        "name": "Muhammad Zidan Fatonie",
+        "job": "Frontend/UI"
+      }
+    ],
+    "Contact": {
+      "address": "Nigeria",
+      "phone": "+1 123 456 1234",
+      "email": "contact.arcnetlabs@gmail.com",
+      "linkedin": "https://www.linkedin.com/company/arcnetlabs/",
+      "twitter": "https://x.com/arcnetlabs",
+      "youtube": "youtube.com"
+    },
+    "Features": [
+      {
+        "icon": "fa fa-comments-o",
+        "title": "Lorem ipsum",
+        "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      },
+      {
+        "icon": "fa fa-bullhorn",
+        "title": "Lorem ipsum",
+        "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      },
+      {
+        "icon": "fa fa-group",
+        "title": "Lorem ipsum",
+        "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      },
+      {
+        "icon": "fa fa-magic",
+        "title": "Lorem ipsum",
+        "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      }
+    ]
+  }
