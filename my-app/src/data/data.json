@@ -152,23 +152,23 @@
     "Features": [
       {
         "icon": "fa fa-comments-o",
-        "title": "Lorem ipsum",
-        "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+        "title": "Creator Coins",
+        "text": "Allows users to support and invest in content creators, potentially benefiting both parties through shared growth and revenue.You can give these coins to creators whose content you love, and they can use these coins to improve their work or even pay for things they need to keep creating."
       },
       {
         "icon": "fa fa-bullhorn",
-        "title": "Lorem ipsum",
-        "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+        "title": "NFT Marketplace",
+        "text": "A place where you can show off your creativity by creating, buying, and selling digital items known as NFTs. These aren't just pictures or videos; they're unique pieces of digital art that prove you were the first to own them."
       },
       {
         "icon": "fa fa-group",
-        "title": "Lorem ipsum",
-        "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+        "title": "Content Tipping",
+        "text": "Want to say thanks to someone for a great post or video? With content tipping, you can send small payments directly to creators as a way of saying thank you or showing appreciation for their hard work.These tips are sent in the form of creator coins, which are deposited into the creator's wallet."
       },
       {
         "icon": "fa fa-magic",
-        "title": "Lorem ipsum",
-        "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+        "title": "Profile ownership",
+        "text": "User profiles are securely anchored to their blockchain wallet's public key, ensuring exclusive ownership and control. This model promotes privacy and prevents censorship, as profiles are inaccessible to anyone other than the owner. On Arcnet, your profile is yours alone. It's linked to something called a “wallet”, which is like a digital safe for your online life."
       }
     ]
   }

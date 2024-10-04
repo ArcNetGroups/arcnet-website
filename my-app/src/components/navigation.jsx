@@ -4,7 +4,7 @@ export const Navigation = (props) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
-        <div className="navbar-header">
+        <div className="nvvbar-header">
           <button
             type="button"
             className="navbar-toggle collapsed"
@@ -27,16 +27,19 @@ export const Navigation = (props) => {
           id="bs-example-navbar-collapse-1"
         >
           <ul className="nav navbar-nav navbar-right">
-            {/* <li>
-              <a href="#features" className="page-scroll">
-                Features
-              </a>
-            </li> */}
+           
             <li>
               <a href="#about" className="page-scroll">
                 MISSION
               </a>
             </li>
+            
+             <li>
+              <a href="#features" className="page-scroll">
+                Features
+              </a>
+            </li>
+
             <li>
               <a href="#services" className="page-scroll">
                GOALS
