@@ -257,11 +257,10 @@ a:focus,
 }
 
 .intro h1 {
-    font-family: "Raleway", sans-serif;
+    font-family: "roboto", sans-serif;
     color: #fff;
     font-size: 82px;
     font-weight: 700;
-    text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -273,8 +272,8 @@ a:focus,
 
 .intro p {
     color: #fff;
-    font-size: 20px;
-    font-weight: 90;
+    font-size: 19px;
+    font-weight: 70;
     font-family: 'Roboto', sans-serif;
     line-height: 30px;
     margin: 0 auto;
@@ -372,6 +371,8 @@ header .intro-text {
     padding: 100px 0;
     background: linear-gradient(to right, #141518 0%, #518abb 100%);
     color: #fff;
+    font-weight: 90;
+    font-family: 'Roboto', sans-serif;
 }
 
 #services .service-desc {
