@@ -1,118 +1,115 @@
 {
     "Header": {
-      "title": "Redefining social media with Arcnet",
-      "paragraph": "We are offering a singular, decentralized platform “Arcnet” that integrates various social dApps enabling users to carry forward their achievements, influence, and followers seamlessly across different services.."
+        "title": "Redefining social media with Arcnet.",
+        "paragraph": "Your data should be yours, fully controlled by you, without being exploited by centralized powers for profit or political agendas. Arcnet offers a better, more empowering social experience for everyone with the use of blockchain technology."
     },
     "About": {
-      "paragraph": "Our mission is to streamline the social media experience by consolidating multiple applications into a single, unified interface. This approach eliminates the need for users to navigate through numerous apps, each requiring separate account management. Instead, our platform facilitates a seamless transition between different social dApps, allowing users to maintain a single profile. We call it “Arcnet” because it’s a network of unified social dapps.",
-      "Why": [
-        "Unified Profile Across Platforms",
-        "Ad Revenue Sharing(Earn from Ads You Love)",
-        "Profile Ownership",
-        "Data Security and Integrity"
-      ],
-      "Why2": [
-        "Augmented Reality (AR) Tweet Integration",
-        "NFT Marketplace",
-        "Creator Coins",
-        "Content Tipping"
-      ]
+        "paragraph": "Our mission is to streamline the social media experience by consolidating multiple applications into a single, unified interface. This approach eliminates the need for users to navigate through numerous apps, each requiring separate account management. Instead, our platform facilitates a seamless transition between different social dApps, allowing users to maintain a single profile. We call it “Arcnet” because it’s a network of unified social dapps.",
+        "Why": [
+            "Unified Profile Across Platforms",
+            "Ad Revenue Sharing(Earn from Ads You Love)",
+            "Profile Ownership",
+            "Content Tipping"
+        ],
+        "Why2": [
+            "Augmented Reality (AR) Tweet Integration",
+            "NFT Marketplace",
+            "Shared Governance",
+            "Data Security and Integrity"
+        ]
     },
-    "Gallery": [
-      {
-        "title": "Project Title",
-        "largeImage": "img/portfolio/01-large.jpg",
-        "smallImage": "img/portfolio/01-small.jpg"
-      },
-      {
-        "title": "Project Title",
-        "largeImage": "img/portfolio/02-large.jpg",
-        "smallImage": "img/portfolio/02-small.jpg"
-      },
-      {
-        "title": "Project Title",
-        "largeImage": "img/portfolio/03-large.jpg",
-        "smallImage": "img/portfolio/03-small.jpg"
-      },
-      {
-        "title": "Project Title",
-        "largeImage": "img/portfolio/04-large.jpg",
-        "smallImage": "img/portfolio/04-small.jpg"
-      },
-      {
-        "title": "Project Title",
-        "largeImage": "img/portfolio/05-large.jpg",
-        "smallImage": "img/portfolio/05-small.jpg"
-      },
-      {
-        "title": "Project Title",
-        "largeImage": "img/portfolio/06-large.jpg",
-        "smallImage": "img/portfolio/06-small.jpg"
-      },
-      {
-        "title": "Project Title",
-        "largeImage": "img/portfolio/07-large.jpg",
-        "smallImage": "img/portfolio/07-small.jpg"
-      },
-      {
-        "title": "Project Title",
-        "largeImage": "img/portfolio/08-large.jpg",
-        "smallImage": "img/portfolio/08-small.jpg"
-      },
-      {
-        "title": "Project Title",
-        "largeImage": "img/portfolio/09-large.jpg",
-        "smallImage": "img/portfolio/09-small.jpg"
-      }
+    "Gallery": [{
+            "title": "Project Title",
+            "largeImage": "img/portfolio/01-large.jpg",
+            "smallImage": "img/portfolio/01-small.jpg"
+        },
+        {
+            "title": "Project Title",
+            "largeImage": "img/portfolio/02-large.jpg",
+            "smallImage": "img/portfolio/02-small.jpg"
+        },
+        {
+            "title": "Project Title",
+            "largeImage": "img/portfolio/03-large.jpg",
+            "smallImage": "img/portfolio/03-small.jpg"
+        },
+        {
+            "title": "Project Title",
+            "largeImage": "img/portfolio/04-large.jpg",
+            "smallImage": "img/portfolio/04-small.jpg"
+        },
+        {
+            "title": "Project Title",
+            "largeImage": "img/portfolio/05-large.jpg",
+            "smallImage": "img/portfolio/05-small.jpg"
+        },
+        {
+            "title": "Project Title",
+            "largeImage": "img/portfolio/06-large.jpg",
+            "smallImage": "img/portfolio/06-small.jpg"
+        },
+        {
+            "title": "Project Title",
+            "largeImage": "img/portfolio/07-large.jpg",
+            "smallImage": "img/portfolio/07-small.jpg"
+        },
+        {
+            "title": "Project Title",
+            "largeImage": "img/portfolio/08-large.jpg",
+            "smallImage": "img/portfolio/08-small.jpg"
+        },
+        {
+            "title": "Project Title",
+            "largeImage": "img/portfolio/09-large.jpg",
+            "smallImage": "img/portfolio/09-small.jpg"
+        }
     ],
-    "Services": [
-      {
-        "icon": "fa fa-wordpress",
-        "name": "AI algorithms",
-        "text": "One of our key goals is to integrate AI algorithms into our transaction processing system. It would realise our dream of faster transaction speeds and lower costs for users."
-      },
-      {
-        "icon": "fa fa-cart-arrow-down",
-        "name": "AI mining",
-        "text": "By replacing traditional miners and validators with advanced AI algorithms capable of solving complex mathematical problems at lightning speed, we aim to transform the blockchain's efficiency."
-      },
-      {
-        "icon": "fa fa-cloud-download",
-        "name": "Quantum Computing",
-        "text": "Furthermore, by harnessing the power of Quantum Computing, we plan to further accelerate these processes, reducing transaction times and costs. This strategic shift not only promises to make our platform faster and more affordable."
-      }
+    "Services": [{
+            "icon": "fa fa-wordpress",
+            "name": "AI algorithms",
+            "text": "One of our main goals is to integrate AI algorithms into our transaction processing system, as current processes like mining and validation are resource-intensive, consuming significant energy and time, which results in slower transaction speeds and higher user costs."
+        },
+        {
+            "icon": "fa fa-cart-arrow-down",
+            "name": "AI mining",
+            "text": "By replacing traditional miners and validators with advanced AI algorithms capable of solving complex mathematical problems at lightning speed, we aim to transform the blockchain's efficiency."
+        },
+        {
+            "icon": "fa fa-cloud-download",
+            "name": "Quantum Computing",
+            "text": "Furthermore, by harnessing the power of Quantum Computing, we plan to further accelerate these processes, reducing transaction times and costs. This strategic shift not only promises to make our platform faster and more affordable."
+        }
     ],
-    "Testimonials": [
-      {
-        "img": "img/testimonials/01.jpg",
-        "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-        "name": "John Doe"
-      },
-      {
-        "img": "img/testimonials/02.jpg",
-        "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-        "name": "Johnathan Doe"
-      },
-      {
-        "img": "img/testimonials/03.jpg",
-        "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-        "name": "John Doe"
-      },
-      {
-        "img": "img/testimonials/04.jpg",
-        "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-        "name": "Johnathan Doe"
-      },
-      {
-        "img": "img/testimonials/05.jpg",
-        "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-        "name": "John Doe"
-      },
-      {
-        "img": "img/testimonials/06.jpg",
-        "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-        "name": "Johnathan Doe"
-      }
+    "Testimonials": [{
+            "img": "img/testimonials/01.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "John Doe"
+        },
+        {
+            "img": "img/testimonials/02.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Johnathan Doe"
+        },
+        {
+            "img": "img/testimonials/03.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "John Doe"
+        },
+        {
+            "img": "img/testimonials/04.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Johnathan Doe"
+        },
+        {
+            "img": "img/testimonials/05.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "John Doe"
+        },
+        {
+            "img": "img/testimonials/06.jpg",
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "name": "Johnathan Doe"
+        }
     ],
     "Team": [
       {
@@ -137,12 +134,12 @@
       }
     ],
     "Contact": {
-      "address": "Nigeria",
-      "phone": "+1 123 456 1234",
-      "email": "contact.arcnetlabs@gmail.com",
-      "linkedin": "https://www.linkedin.com/company/arcnetlabs/",
-      "twitter": "https://x.com/arcnetlabs",
-      "youtube": "youtube.com"
+        "address": "Nigeria",
+        "phone": "+1 123 456 1234",
+        "email": "contact.arcnetlabs@gmail.com",
+        "linkedin": "https://www.linkedin.com/company/arcnetlabs/",
+        "twitter": "https://x.com/arcnetlabs",
+        "youtube": "youtube.com"
     },
     "Features": [
       {
@@ -162,4 +159,4 @@
         "text": "User profiles are securely anchored to their blockchain wallet's public key, ensuring exclusive ownership and control. This model promotes privacy and prevents censorship, as profiles are inaccessible to anyone other than the owner. On Arcnet, your profile is yours alone. It's linked to something called a “wallet”, which is like a digital safe for your online life."
       }
     ]
-  }
+}
