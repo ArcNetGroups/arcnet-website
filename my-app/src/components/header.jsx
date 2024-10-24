@@ -1,6 +1,10 @@
 import React from "react";
 
 export const Header = (props) => {
+  const titleWithArcnetHighlighted = props.data
+    ? props.data.title.replace("Arcnet", "<span class='highlight'>Arcnet</span>")
+    : "Loading";
+
   return (
     <header id="header">
       <div className="intro">
@@ -8,17 +12,8 @@ export const Header = (props) => {
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text">
-                <h1>
-                  {props.data ? props.data.title : "Loading"}
-                  <span></span>
-                </h1>
+                <h1 dangerouslySetInnerHTML={{ __html: titleWithArcnetHighlighted }} />
                 <p>{props.data ? props.data.paragraph : "Loading"}</p>
-                {/* <a
-                  href="#features"
-                  className="btn btn-custom btn-lg page-scroll"
-                >
-                  Learn More
-                </a>{" "} */}
               </div>
             </div>
           </div>

@@ -272,8 +272,8 @@ a:focus,
 
 .intro p {
     color: #fff;
-    font-size: 19px;
-    font-weight: 70;
+    font-size: 17px;
+    font-weight: 400;
     font-family: 'Roboto', sans-serif;
     line-height: 30px;
     margin: 0 auto;
@@ -287,24 +287,85 @@ header .intro-text {
     font-family: Manrope, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+.highlight {
+    background-color: black;
+    color: linear-gradient(to right, #141518 0%, #518abb 100%);
+    /* Change the text color to white for contrast */
+    /* Optional: Add rounded corners */
+}
+
 
 /* Features Section */
 
 #features {
-    background: #ffffff;
+    background: linear-gradient(to right, #141518 0%, #518abb 100%);
+}
+
+#features h3 {
+    color: #fff;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+#features h2 {
+    color: #fff;
+}
+
+#features p {
+    color: rgba(255, 255, 255, 0.75);
 }
 
 #features i.fa {
     font-size: 38px;
     margin-bottom: 20px;
     transition: all 0.5s;
-    color: #344d4e;
+    color: #fff;
     width: 100px;
     height: 100px;
     padding: 30px 0;
     border-radius: 50%;
     background: linear-gradient(to right, #4e731b 0%, #5ca9fb 100%);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    /* Center the icon */
+}
+
+
+/* Ensure spacing with padding instead of margin */
+
+.feature-box {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    /* Adds visible border */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-height: 500px;
+    /* Ensures uniform height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center all content vertically */
+    align-items: center;
+    /* Center all content horizontally */
+    margin: 0.0011px;
+}
+
+
+/* Adding padding to the row to manage spacing */
+
+.row {
+    padding: 35px;
+    /* Adds space around the grid items */
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge the box on hover */
 }
 
 
@@ -316,7 +377,8 @@ header .intro-text {
 
 #about h3 {
     font-size: 22px;
-    margin: 0 0 20px;
+    margin: 15px 0;
+    margin-bottom: -12px;
 }
 
 #about h2 {

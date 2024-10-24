@@ -6,12 +6,13 @@ export const Features = (props) => {
       <div className="container">
         <div className="col-md-10 col-md-offset-1 section-title">
           <h2>Features</h2>
+          <p>Some of our exciting features include?</p>
         </div>
         <div className="row">
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.title}-${i}`} className="col-xs-6 col-md-3">
-                  {" "}
+                <div key={`${d.title}-${i}`} className="col-xs-6 col-md-3 feature-box">
+                  {/* No need for an additional wrapper */}
                   <i className={d.icon}></i>
                   <h3>{d.title}</h3>
                   <p>{d.text}</p>
