@@ -69,8 +69,6 @@ ol {
 ul,
 ol {
     padding: 0;
-    /* webkit-padding: 0;
-  moz-padding: 0; */
 }
 
 hr {
@@ -288,84 +286,102 @@ header .intro-text {
 }
 
 .highlight {
-    background-color: black;
-    color: linear-gradient(to right, #141518 0%, #518abb 100%);
-    /* Change the text color to white for contrast */
-    /* Optional: Add rounded corners */
+    background-color: #080808;
+    /* Dark violet background */
+    color: #f0f0f0 !important;
+    /* Dark grey text */
+    font-weight: bold;
+    /* Optional: make the text bold for emphasis */
+    padding: 1px 1px;
+    /* Adds padding to give it a button-like feel */
+    border-radius: 4px;
+    /* Subtle rounded corners */
 }
-
-
-/* Features Section */
 
 #features {
     background: linear-gradient(to right, #141518 0%, #518abb 100%);
-}
-
-#features h3 {
-    color: #fff;
-    font-weight: 500;
-    padding: 5px 0;
+    padding: 20px 0;
+    /* Ensure top and bottom padding */
 }
 
 #features h2 {
     color: #fff;
+    /* Title color */
 }
 
 #features p {
     color: rgba(255, 255, 255, 0.75);
+    /* Description text color */
 }
 
-#features i.fa {
-    font-size: 38px;
-    margin-bottom: 20px;
-    transition: all 0.5s;
-    color: #fff;
-    width: 100px;
-    height: 100px;
-    padding: 30px 0;
-    border-radius: 50%;
-    background: linear-gradient(to right, #4e731b 0%, #5ca9fb 100%);
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+.icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px auto;
-    /* Center the icon */
+    width: 100px;
+    /* Fixed width for icons */
+    height: 100px;
+    /* Fixed height for icons */
+    margin-bottom: 20px;
+    /* Space between icon and text */
+    background: linear-gradient(to right, #4e731b 0%, #5ca9fb 100%);
+    border-radius: 50%;
+    /* Round background for icons */
 }
-
-
-/* Ensure spacing with padding instead of margin */
 
 .feature-box {
     border: 2px solid rgba(255, 255, 255, 0.2);
-    /* Adds visible border */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    /* Space between feature boxes */
     min-height: 500px;
-    /* Ensures uniform height */
+    /* Ensures consistent height */
+    transition: transform 0.2s;
+    /* Smooth hover effect */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* Center all content vertically */
+    /* Align children vertically */
     align-items: center;
-    /* Center all content horizontally */
-    margin: 0.0011px;
-}
-
-
-/* Adding padding to the row to manage spacing */
-
-.row {
-    padding: 35px;
-    /* Adds space around the grid items */
+    /* Center items */
+    text-align: center;
+    /* Center text */
 }
 
 .feature-box:hover {
     transform: scale(1.05);
     /* Slightly enlarge the box on hover */
+}
+
+.feature-box h3 {
+    color: #fff;
+    /* Title text color */
+}
+
+.feature-box p {
+    color: rgba(255, 255, 255, 0.75);
+    /* Feature description text color */
+}
+
+.feature-box i {
+    font-size: 38px;
+    /* Icon size */
+    color: #fff;
+    /* Icon color */
+    transition: all 0.5s;
+    /* Smooth transition for icons */
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .feature-box {
+        flex: 1 1 50%;
+        /* 2 columns on small screens */
+    }
 }
 
 
@@ -600,15 +616,8 @@ header .intro-text {
     margin: 5px 0;
 }
 
-
-/* #team.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}  */
-
 #team .team-img {
-    width: 240px;
+    width: 130px;
 }
 
 #team .thumbnail {
@@ -619,6 +628,18 @@ header .intro-text {
 #team .thumbnail .caption {
     padding: 10px 0 0;
     color: #888;
+}
+
+#team .caption h4 a {
+    color: #333;
+    /* Normal text color */
+    text-decoration: none;
+}
+
+#team .caption h4 a:hover {
+    color: #0077b5;
+    /* LinkedIn blue */
+    text-decoration: underline;
 }
 
 
@@ -774,7 +795,7 @@ label {
 }
 
 
-/* Footer Section*/
+/* Footer Section */
 
 #footer {
     background: #f6f6f6;
@@ -793,6 +814,9 @@ label {
 #footer a:hover {
     border-bottom: 2px solid #608dfd;
 }
+
+
+/* Media Queries */
 
 @media (max-width: 768px) {
     #about img {

@@ -103,22 +103,21 @@
     "Team": [{
             "img": "img/team/Henry.jpg",
             "name": "Henry Giwa",
-            "job": "Founder"
+            "job": "Founder",
+            "linkedin": "https://www.linkedin.com/in/henrygiwa"
         },
         {
             "img": "img/team/02.jpg",
             "name": "Meghna Malasi",
-            "job": "Chief Technical officer"
+            "job": "Chief Technical officer",
+            "linkedin": "https://www.linkedin.com/in/meghnamalasi"
+
         },
         {
             "img": "img/team/03.jpg",
             "name": "Kaushal Desai",
-            "job": "Blockchain developer"
-        },
-        {
-            "img": "img/team/05.jpg",
-            "name": "Yuvan",
-            "job": "Frontend/UI/ML"
+            "job": "Blockchain developer",
+            "linkedin": "https://www.linkedin.com/in/kaushal-desai-bb79a4203/"
         }
     ],
     "Contact": {

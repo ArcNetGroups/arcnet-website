@@ -47,7 +47,7 @@ export const Contact = (props) => {
                   Please fill out the form below to send us an email with your message if you would be interested in using our platform after it is launched. 
                 </p>
               </div>
-              <form name="sentMessage" validate onSubmit={handleSubmit}>
+              <form name="sentMessage" validate="true" onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">

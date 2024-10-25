@@ -11,9 +11,10 @@ export const Features = (props) => {
         <div className="row">
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.title}-${i}`} className="col-xs-6 col-md-3 feature-box">
-                  {/* No need for an additional wrapper */}
-                  <i className={d.icon}></i>
+                <div key={`${d.title}-${i}`} className="col-xs-6 col-sm-6 col-md-3 feature-box">
+                  <div className="icon-container">
+                    <i className={d.icon}></i>
+                  </div>
                   <h3>{d.title}</h3>
                   <p>{d.text}</p>
                 </div>
