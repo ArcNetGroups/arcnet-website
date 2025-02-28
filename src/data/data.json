@@ -1,22 +1,11 @@
 {
     "Header": {
-        "title": "Redefining social media with Arcnet.",
-        "paragraph": "Your data should be yours, fully controlled by you, without being exploited by centralized powers for profit or political agendas. Arcnet offers a better, more empowering social experience for everyone with the use of blockchain technology."
+        "title": "Redefining social media with <span class='highlight'>Arcnet</span>.",
+        "paragraph": "Your data and the information you see belong to you—fully under your control, free from manipulation by media, political, or corporate interests. Arcnet offers an independent, secure, and decentralized experience, empowering you with the freedom and privacy you deserve through blockchain technology."
     },
     "About": {
-        "paragraph": "Our mission is to streamline the social media experience by consolidating multiple applications into a single, unified interface. This approach eliminates the need for users to navigate through numerous apps, each requiring separate account management. Instead, our platform facilitates a seamless transition between different social dApps, allowing users to maintain a single profile. We call it “Arcnet” because it’s a network of unified social dapps.",
-        "Why": [
-            "Unified Profile Across Platforms",
-            "Ad Revenue Sharing(Earn from Ads You Love)",
-            "Profile Ownership",
-            "Content Tipping"
-        ],
-        "Why2": [
-            "Augmented Reality (AR) Tweet Integration",
-            "NFT Marketplace",
-            "Shared Governance",
-            "Data Security and Integrity"
-        ]
+        "paragraph": "We aim to create a decentralized social media platform that champions freedom of speech, equitably distributes ad revenue among users, and protects user data. By leveraging blockchain technology, we empower users to engage in a censorship-free environment where their voices matter. Our platform fosters economic inclusion through features like SupCoins—short for support coins, tipping, ad revenue sharing, and an NFT marketplace, transforming social media into a space that prioritizes privacy, autonomy, and economic opportunity for all.",
+        "paragraph2": "The current social media landscape is characterized by fragmentation and redundancy. Users often find themselves juggling multiple apps, each requiring its own account setup and management. This not only complicates the user experience but also limits the potential for meaningful connections and engagement. We aims to address these issues by offering a singular, decentralized platform “Arcnet” that integrates various social apps, enabling users to carry forward their achievements, influence, and followers seamlessly across different services. We call it “Arcnet” because it's a network of unified social apps."
     },
     "Gallery": [{
             "title": "Project Title",
@@ -111,27 +100,25 @@
             "name": "Johnathan Doe"
         }
     ],
-    "Team": [
-      {
-        "img": "img/team/01.jpg",
-        "name": "Henry Giwa",
-        "job": "Founder"
-      },
-      {
-        "img": "img/team/02.jpg",
-        "name": "Meghna Malasi",
-        "job": "Chief Technical officer"
-      },
-      {
-        "img": "img/team/03.jpg",
-        "name": "Kaushal Desai",
-        "job": "Blockchain developer"
-      },
-      {
-        "img": "img/team/05.jpg",
-        "name": "Yuvan",
-        "job": "Frontend/UI/ML"
-      }
+    "Team": [{
+            "img": "img/team/Henry.jpg",
+            "name": "Henry Giwa",
+            "job": "Founder",
+            "linkedin": "https://www.linkedin.com/in/henrygiwa"
+        },
+        {
+            "img": "img/team/02.jpg",
+            "name": "Meghna Malasi",
+            "job": "Chief Technical officer",
+            "linkedin": "https://www.linkedin.com/in/meghnamalasi"
+
+        },
+        {
+            "img": "img/team/03.jpg",
+            "name": "Kaushal Desai",
+            "job": "Blockchain developer",
+            "linkedin": "https://www.linkedin.com/in/kaushal-desai-bb79a4203/"
+        }
     ],
     "Contact": {
         "address": "Nigeria",
@@ -141,22 +128,25 @@
         "twitter": "https://x.com/arcnetlabs",
         "youtube": "youtube.com"
     },
-    "Features": [
-      {
-        "icon": "fa fa-comments-o",
-        "name": "Creator Coins",
-        "text": "Allows users to support and invest in content creators, potentially benefiting both parties through shared growth and revenue.You can give these coins to creators whose content you love, and they can use these coins to improve their work or even pay for things they need to keep creating."
-      },
-      
-      {
-        "icon": "fa fa-group",
-        "name": "Content Tipping",
-        "text": "Want to say thanks to someone for a great post or video? With content tipping, you can send small payments directly to creators as a way of saying thank you or showing appreciation for their hard work.These tips are sent in the form of creator coins, which are deposited into the creator's wallet."
-      },
-      {
-        "icon": "fa fa-magic",
-        "name": "Profile ownership",
-        "text": "User profiles are securely anchored to their blockchain wallet's public key, ensuring exclusive ownership and control. This model promotes privacy and prevents censorship, as profiles are inaccessible to anyone other than the owner. On Arcnet, your profile is yours alone. It's linked to something called a “wallet”, which is like a digital safe for your online life."
-      }
+    "Features": [{
+            "icon": "fa fa-comments-o",
+            "title": "Support Coins",
+            "text": "Allows users to support and invest in content creators, potentially benefiting both parties through shared growth and revenue. You can give these coins to creators whose content you love, and they can use these coins to improve their work or even pay for things they need to keep creating."
+        },
+        {
+            "icon": "fa fa-bullhorn",
+            "title": "NFT Marketplace",
+            "text": "A place where you can show off your creativity by creating, buying, and selling digital items known as NFTs. These aren't just pictures or videos; they're unique pieces of digital art that prove you were the first to own them."
+        },
+        {
+            "icon": "fa fa-group",
+            "title": "Content Tipping",
+            "text": "Want to say thanks to someone for a great post or video? With content tipping, you can send small payments directly to creators as a way of saying thank you or showing appreciation for their hard work.These tips are sent in the form of creator coins, which are deposited into the creator's wallet."
+        },
+        {
+            "icon": "fa fa-magic",
+            "title": "Profile ownership",
+            "text": "User profiles are securely anchored to their blockchain wallet's public key, ensuring exclusive ownership and control. This model promotes privacy and prevents censorship, as profiles are inaccessible to anyone other than the owner. On Arcnet, your profile is yours alone. It's linked to something called a “wallet”, which is like a digital safe for your online life."
+        }
     ]
 }

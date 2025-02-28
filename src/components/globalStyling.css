@@ -1,0 +1,75 @@
+
+@media(max-width: 768px){
+    /* nav */
+    .nav{
+        padding-top: 30px;
+        
+    }
+    .nav a{
+     color: white;
+      width: 300px;
+      padding: 30px;
+    }
+
+    .navbar-collapse {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: white;
+      text-align: center;
+      padding: 10px 0;
+  
+    }
+    .innerDiv h1{
+font-size: 65px;
+    }
+  .innerDiv p{
+    font-size: 15px ;
+  }
+ 
+  /* About us page */
+    
+  #about img{
+ padding-bottom: 10px;
+ margin: 0;
+ width: 350px;
+  }
+ #about p{
+   width: 90%;
+ }
+ /* features */
+ .featureDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+ }
+ .featureDiv .innerDiv{
+   width: 300px;
+   height: 100px;
+ }
+
+ /* services */
+
+ .service-desc{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+ }
+
+ #features {
+    padding: 20px;
+    width: 50px;
+  }
+
+#contact .row input{
+  border-radius: 10px;
+
+  height: 45px;
+}
+#contact .form-group textarea{
+border-radius: 10px;
+}
+  
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import './globalStyling.css'
 
 export const Navigation = (props) => {
   return (
