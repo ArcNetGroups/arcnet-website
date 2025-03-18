@@ -3,23 +3,47 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import React from "react";
 
-
 export const Contact = (props) => {
-const [name, setName]= useState('')
-const [email,setEmail] = useState('')
-const [text, setText] = useState('')
-const [fillInput, setFillInput] = useState(false)
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
+  const [errors, setErrors] = useState({});
 
-const handleSubmit=(e)=>{
-  e.preventDefault()
-  if(!name || !email || !text){
-setFillInput(!fillInput)
-  }else{
-    console.log(name, email,text)
-    toast.success("Message sent successfully")
-  }
- 
-}
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Validate input fields
+    const newErrors = {};
+    if (!name) newErrors.name = "*Kindly input your name";
+    if (!email) newErrors.email = "*Kindly input your mail";
+    if (!text) newErrors.text = "*Kindly include this field";
+
+    setErrors(newErrors);
+
+    // If any field is empty, stop form submission
+    if (Object.keys(newErrors).length > 0) return;
+
+    try {
+      const response = await fetch("https://arcnet-website-backend.onrender.com/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message: text }),
+      });
+
+      const data = await response.json();
+      if (response.ok) {
+        toast.success("Message sent successfully");
+        setName("");
+        setEmail("");
+        setText("");
+        setErrors({});
+      } else {
+        toast.error(data.error || "Something went wrong");
+      }
+    } catch (error) {
+      toast.error("Network error. Please try again.");
+    }
+  };
 
   return (
     <div>
@@ -44,11 +68,10 @@ setFillInput(!fillInput)
                         name="name"
                         className="form-control"
                         placeholder="Name"
-                        onChange={(e)=>setName(e.target.value)}
-                        required
-                        
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                       />
-                    <p className={fillInput ? "block" : "hidden"}>*Kindly input your name</p>
+                      {errors.name && <p className="error-text">{errors.name}</p>}
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -58,13 +81,10 @@ setFillInput(!fillInput)
                         name="email"
                         className="form-control"
                         placeholder="Email"
-                        onChange={(e)=>setEmail(e.target.value)}
-          
-                        required
-                        
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
-                       <p className={fillInput ? "block" : "hidden"}>*Kindly input your mail</p>
-                      
+                      {errors.email && <p className="error-text">{errors.email}</p>}
                     </div>
                   </div>
                 </div>
@@ -75,18 +95,16 @@ setFillInput(!fillInput)
                     className="form-control"
                     rows="4"
                     placeholder="Message"
-                    onChange={(e)=>setText(e.target.value)}
-                    required
-                    
+                    value={text}
+                    onChange={(e) => setText(e.target.value)}
                   ></textarea>
-                   <p className={fillInput ? "block" : "hidden"}>*Kindly include this field</p>
+                  {errors.text && <p className="error-text">{errors.text}</p>}
                 </div>
                 <button onClick={handleSubmit} type="submit" className="btn btn-custom btn-lg">
                   Send Message
                 </button>
-                <ToastContainer/>
+                <ToastContainer />
               </form>
-             
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
