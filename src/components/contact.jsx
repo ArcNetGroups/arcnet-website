@@ -3,23 +3,45 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import React from "react";
 
-
 export const Contact = (props) => {
-const [name, setName]= useState('')
-const [email,setEmail] = useState('')
-const [text, setText] = useState('')
-const [fillInput, setFillInput] = useState(false)
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [text, setText] = useState("");
+  const [fillInput, setFillInput] = useState(false);
 
-const handleSubmit=(e)=>{
-  e.preventDefault()
-  if(!name || !email || !text){
-setFillInput(!fillInput)
-  }else{
-    console.log(name, email,text)
-    toast.success("Message sent successfully")
-  }
- 
-}
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (!name || !email || !text) {
+      setFillInput(true);
+      toast.error("Please fill in all fields");
+      return;
+    }
+
+    const messageData = { name, email, message: text };
+
+    try {
+      const response = await fetch("https://arcnet-website-backend.onrender.com/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(messageData),
+      });
+
+      if (response.ok) {
+        toast.success("Message sent successfully");
+        setName("");
+        setEmail("");
+        setText("");
+      } else {
+        toast.error("Failed to send message");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast.error("An error occurred. Please try again later.");
+    }
+  };
 
   return (
     <div>
@@ -34,7 +56,7 @@ setFillInput(!fillInput)
                   using our platform after it is launched.
                 </p>
               </div>
-              <form name="sentMessage">
+              <form name="sentMessage" onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
@@ -44,11 +66,11 @@ setFillInput(!fillInput)
                         name="name"
                         className="form-control"
                         placeholder="Name"
-                        onChange={(e)=>setName(e.target.value)}
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                         required
-                        
                       />
-                    <p className={fillInput ? "block" : "hidden"}>*Kindly input your name</p>
+                      <p className={fillInput ? "block" : "hidden"}>*Kindly input your name</p>
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -58,13 +80,11 @@ setFillInput(!fillInput)
                         name="email"
                         className="form-control"
                         placeholder="Email"
-                        onChange={(e)=>setEmail(e.target.value)}
-          
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         required
-                        
                       />
-                       <p className={fillInput ? "block" : "hidden"}>*Kindly input your mail</p>
-                      
+                      <p className={fillInput ? "block" : "hidden"}>*Kindly input your mail</p>
                     </div>
                   </div>
                 </div>
@@ -75,18 +95,17 @@ setFillInput(!fillInput)
                     className="form-control"
                     rows="4"
                     placeholder="Message"
-                    onChange={(e)=>setText(e.target.value)}
+                    value={text}
+                    onChange={(e) => setText(e.target.value)}
                     required
-                    
                   ></textarea>
-                   <p className={fillInput ? "block" : "hidden"}>*Kindly include this field</p>
+                  <p className={fillInput ? "block" : "hidden"}>*Kindly include this field</p>
                 </div>
-                <button onClick={handleSubmit} type="submit" className="btn btn-custom btn-lg">
+                <button type="submit" className="btn btn-custom btn-lg">
                   Send Message
                 </button>
-                <ToastContainer/>
+                <ToastContainer />
               </form>
-             
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
