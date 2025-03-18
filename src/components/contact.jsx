@@ -11,37 +11,36 @@ export const Contact = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    
     if (!name || !email || !text) {
       setFillInput(true);
-      toast.error("Please fill in all fields");
       return;
     }
-
-    const messageData = { name, email, message: text };
-
+  
     try {
       const response = await fetch("https://arcnet-website-backend.onrender.com/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(messageData),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message: text }),
       });
-
+  
+      const data = await response.json();
+  
       if (response.ok) {
-        toast.success("Message sent successfully");
+        toast.success("Message sent successfully!");
+        // Reset form fields
         setName("");
         setEmail("");
         setText("");
       } else {
-        toast.error("Failed to send message");
+        toast.error(data.error || "Failed to send message.");
       }
     } catch (error) {
-      console.error("Error sending message:", error);
-      toast.error("An error occurred. Please try again later.");
+      console.error("Error submitting form:", error);
+      toast.error("Something went wrong. Please try again.");
     }
   };
+  
 
   return (
     <div>
