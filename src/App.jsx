@@ -18,8 +18,22 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
+  
   useEffect(() => {
     setLandingPageData(JsonData);
+  }, []);
+
+  // 💡 Add this effect to support #contact scroll on page load
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 300); // Adjust delay if it's rendering slowly
+    }
   }, []);
 
   return (
