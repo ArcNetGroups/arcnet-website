@@ -168,20 +168,37 @@ hr {
 /* src/components/NotificationBar.css */
 .notification-bar {
     position: sticky; /* Make the notification bar sticky */
-    top: 60px; /* Set this value to the height of your navbar */
+    top: 60px; /* Adjust this to the height of your navbar, so it sticks just below it */
     left: 0;
     background-color: #f1c40f; /* Customize the background color */
     color: white;
     text-align: center;
     padding: 10px;
     font-size: 16px;
-    z-index: 9999; /* Ensure it stays above content but beneath the navbar */
+    z-index: 9999; /* Ensure it stays above the content but beneath the navbar */
     width: 100%;
 }
 
+/* For smaller screen sizes (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .notification-bar {
+        top: 0; /* Reset the top value for mobile screens to avoid overlapping with the navbar */
+        position: fixed; /* Make it fixed on mobile for better visibility */
+    }
+}
+
+/* Adjust the body padding to accommodate the sticky bar */
 body {
     padding-top: 60px; /* Ensure the body content doesn't get hidden by the navbar */
 }
+
+/* Add some padding on mobile for proper spacing */
+@media (max-width: 768px) {
+    body {
+        padding-top: 120px; /* Adjust for the fixed notification bar on mobile */
+    }
+}
+
 
 
 
