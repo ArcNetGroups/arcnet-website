@@ -141,7 +141,7 @@ export const Contact = (props) => {
       </div>
       <div id="footer">
         <div className="container text-center">
-          <p>&copy; 2024 ArcnetLabs. Designed by Meghna Malasi</p>
+          <p>&copy; 2024 ArcnetLabs. Designed by Arcnetlabs Team</p>
         </div>
       </div>
     </div>
