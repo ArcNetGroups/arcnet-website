@@ -25,16 +25,24 @@ const App = () => {
 
   // 💡 Add this effect to support #contact scroll on page load
   useEffect(() => {
-    const hash = window.location.hash;
-    if (hash) {
-      setTimeout(() => {
-        const element = document.querySelector(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 300); // Adjust delay if it's rendering slowly
-    }
+    setLandingPageData(JsonData);
+  
+    const scrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        // Delay to wait for components to render
+        setTimeout(() => {
+          const el = document.querySelector(hash);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 300); // Adjust delay as needed
+      }
+    };
+  
+    scrollToHash();
   }, []);
+  
 
   return (
     <div>
