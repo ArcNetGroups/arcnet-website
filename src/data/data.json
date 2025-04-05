@@ -101,29 +101,29 @@
         }
     ],
     "Team": [{
-            "img": "img/team/Henry.jpg",
+            "img": "",
             "name": "Henry Giwa",
             "job": "Founder",
             "linkedin": "https://www.linkedin.com/in/henrygiwa"
         },
         {
-            "img": "img/team/02.jpg",
-            "name": "Meghna Malasi",
+            "img": "",
+            "name": "",
             "job": "Chief Technical officer",
-            "linkedin": "https://www.linkedin.com/in/meghnamalasi"
+            "linkedin": ""
 
         },
         {
-            "img": "img/team/03.jpg",
-            "name": "Kaushal Desai",
+            "img": "",
+            "name": "",
             "job": "Blockchain developer",
-            "linkedin": "https://www.linkedin.com/in/kaushal-desai-bb79a4203/"
+            "linkedin": ""
         }
     ],
     "Contact": {
         "address": "Nigeria",
         "phone": "+1 123 456 1234",
-        "email": "contact.arcnetlabs@gmail.com",
+        "email": "company@arcnetlabs.com",
         "linkedin": "https://www.linkedin.com/company/arcnetlabs/",
         "twitter": "https://x.com/arcnetlabs",
         "youtube": "youtube.com"

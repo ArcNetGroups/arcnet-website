@@ -51,8 +51,7 @@ export const Contact = (props) => {
               <div className="innerDiv section-title">
                 <h2>User Waitlist</h2>
                 <p>
-                  Please fill out the form below to send us an email with your message if you would be interested in
-                  using our platform after it is launched.
+                Fill out the form below to express your interest in using our platform once it's launched.
                 </p>
               </div>
               <form name="sentMessage" onSubmit={handleSubmit}>
@@ -93,7 +92,7 @@ export const Contact = (props) => {
                     id="message"
                     className="form-control"
                     rows="4"
-                    placeholder="Message"
+                    placeholder="Your insights and feedback are valuable to us! 😊"
                     value={text}
                     onChange={(e) => setText(e.target.value)}
                     required

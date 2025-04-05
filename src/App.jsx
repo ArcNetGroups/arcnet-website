@@ -10,6 +10,7 @@ import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
+import NotificationBar from "./components/notificationBar"; // Import the notification bar
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
@@ -18,15 +19,11 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({});
-  
-  useEffect(() => {
-    setLandingPageData(JsonData);
-  }, []);
 
-  // 💡 Add this effect to support #contact scroll on page load
   useEffect(() => {
     setLandingPageData(JsonData);
-  
+
+    // 💡 Add this effect to support #contact scroll on page load
     const scrollToHash = () => {
       const hash = window.location.hash;
       if (hash) {
@@ -39,13 +36,13 @@ const App = () => {
         }, 300); // Adjust delay as needed
       }
     };
-  
+
     scrollToHash();
   }, []);
-  
 
   return (
     <div>
+      <NotificationBar /> {/* Display the notification bar */}
       <Navigation />
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />
