@@ -1,0 +1,225 @@
+/* Features section styling */
+#features {
+    position: relative;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f0ff 50%, #ede4ff 100%);
+    padding: 100px 0 120px;
+    overflow: hidden;
+    color: #000 !important;
+}
+
+/* Section title */
+#features .section-title h2 {
+    color: #000 !important;
+    font-size: 36px !important;
+    font-weight: 700 !important;
+    margin-bottom: 20px !important;
+}
+
+#features .section-title p {
+    color: #000 !important;
+    font-size: 18px !important;
+    margin-bottom: 60px !important;
+}
+
+/* Carousel styling */
+.features-carousel-container {
+    position: relative;
+    margin: 0 -20px;
+    overflow: hidden;
+}
+
+.features-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.features-carousel::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+/* Feature card styling */
+.feature-card {
+    flex: 0 0 300px;
+    margin: 0 15px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(93, 34, 145, 0.08);
+    transition: all 0.3s ease;
+    scroll-snap-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(93, 34, 145, 0.15);
+}
+
+.feature-icon-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #f5f0ff 0%, #ede4ff 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.feature-icon-container i {
+    font-size: 36px;
+    color: #5d2291;
+}
+
+#features .feature-card h3 {
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    color: #000 !important;
+    margin-bottom: 15px !important;
+}
+
+#features .feature-card p {
+    color: #333 !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+}
+
+/* Carousel indicators */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+    background-color: #000;
+    transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    #features .section-title h2 {
+        font-size: 32px !important;
+    }
+
+    #features .section-title p {
+        font-size: 16px !important;
+        margin-bottom: 40px !important;
+        padding: 0 20px !important;
+    }
+
+    .feature-card {
+        flex: 0 0 280px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    #features {
+        padding: 70px 0 80px;
+    }
+
+    #features .section-title h2 {
+        font-size: 28px !important;
+    }
+
+    #features .section-title p {
+        font-size: 15px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .feature-card {
+        flex: 0 0 250px;
+        padding: 25px;
+    }
+
+    .feature-icon-container {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+
+    #features .feature-card h3 {
+        font-size: 20px !important;
+        margin-bottom: 12px !important;
+    }
+
+    #features .feature-card p {
+        font-size: 14px !important;
+    }
+
+    .carousel-indicators {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    #features {
+        padding: 60px 0 70px;
+    }
+
+    #features .section-title h2 {
+        font-size: 24px !important;
+        padding: 0 10px !important;
+    }
+
+    #features .section-title p {
+        font-size: 14px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .feature-card {
+        flex: 0 0 220px;
+        padding: 20px;
+        margin: 0 8px;
+    }
+
+    .feature-icon-container {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+
+    .feature-icon-container i {
+        font-size: 28px;
+    }
+
+    #features .feature-card h3 {
+        font-size: 18px !important;
+        margin-bottom: 10px !important;
+    }
+
+    #features .feature-card p {
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+    }
+
+    .carousel-indicators {
+        margin-top: 25px;
+    }
+
+    .carousel-dot {
+        width: 8px;
+        height: 8px;
+    }
+}

@@ -1,3 +1,138 @@
+/* Prime theme color variables */
+:root {
+  --prime-dark: #0f0a19;
+  --prime-darker: #0a0812;
+  --prime-violet: #5d2291;
+  --prime-light-violet: #7f3aaf;
+  --prime-accent: #c599e9;
+  --prime-light: #f8f9fa;
+  --prime-gray: #6c757d;
+  --prime-text-light: #e2e2e2;
+  --prime-text-dark: #1a1a2e;
+  --prime-gradient: linear-gradient(135deg, var(--prime-dark) 0%, var(--prime-violet) 100%);
+  --prime-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* General styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  background-color: var(--prime-dark);
+  color: var(--prime-text-light);
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Common transition for interactive elements */
+a,
+button,
+input,
+textarea,
+.feature-box,
+.thumbnail,
+.icon-container,
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove outlines from focused elements */
+:focus {
+  outline: none;
+}
+
+/* Dark theme overrides */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--prime-text-light);
+}
+
+p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Section styling */
+section {
+  padding: 100px 0;
+}
+
+#about,
+#services {
+  background-color: var(--prime-darker);
+}
+
+#features,
+#team,
+#contact {
+  background-color: var(--prime-dark);
+}
+
+/* Feature boxes in dark theme */
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-box h3 {
+  color: var(--prime-light);
+}
+
+.feature-box p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Form elements */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--prime-text-light);
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--prime-violet);
+  color: var(--prime-text-light);
+}
+
+/* Button styling */
+.btn-custom {
+  background: var(--prime-violet);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: var(--prime-box-shadow);
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background: var(--prime-light-violet);
+  color: white;
+}
+
+/* Responsive */
 @media screen and (max-width: 400px) {
   #features {
     padding: 20px;

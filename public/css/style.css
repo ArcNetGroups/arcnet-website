@@ -520,7 +520,7 @@ header .intro-text {
     text-align: center;
     margin: 0 auto;
     color: #fff;
-    background: linear-gradient( to right, rgba(99, 114, 255, 0.8) 0%, rgba(92, 169, 251, 0.8) 100%);
+    background: linear-gradient(to right, rgba(99, 114, 255, 0.8) 0%, rgba(92, 169, 251, 0.8) 100%);
     padding: 30% 0 0;
     height: 100%;
     width: 100%;
@@ -645,25 +645,55 @@ header .intro-text {
 
 /* Contact Section */
 
-#contact {
+#contact,
+#waitlist {
     padding: 100px 0 60px;
-    background: linear-gradient(to right, #1b1c22 0%, #4071a5 100%);
-    color: rgba(255, 255, 255, 0.75);
+    background: linear-gradient(135deg, #121420 0%, #1a1a2e 100%) !important;
+    color: #fff !important;
+    position: relative;
+    overflow: hidden;
+}
+
+#waitlist::before,
+#waitlist::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+#waitlist::before {
+    background: radial-gradient(circle, rgba(157, 78, 221, 0.1) 0%, rgba(157, 78, 221, 0) 70%);
+    top: -100px;
+    right: -100px;
+}
+
+#waitlist::after {
+    background: radial-gradient(circle, rgba(123, 44, 191, 0.1) 0%, rgba(123, 44, 191, 0) 70%);
+    bottom: -100px;
+    left: -100px;
 }
 
 #contact .section-title {
     margin-bottom: 40px;
 }
 
-#contact .section-title p {
+#contact .section-title p,
+#waitlist p {
     font-size: 16px;
+    color: #fff !important;
 }
 
-#contact h2 {
-    color: #fff;
+#contact h2,
+#waitlist h2 {
+    color: #fff !important;
     margin-top: 10px;
     margin-bottom: 15px;
     padding-bottom: 15px;
+    font-size: 36px;
+    font-weight: 700;
 }
 
 #contact .section-title h2::after {
@@ -676,15 +706,18 @@ header .intro-text {
     left: 30px;
 }
 
-#contact h3 {
-    color: #fff;
-    margin-top: 80px;
+#contact h3,
+#waitlist h3,
+#waitlist h4 {
+    color: #fff !important;
+    margin-top: 0;
     margin-bottom: 25px;
-    padding-bottom: 20px;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 24px;
 }
 
-#contact form {
+#contact form,
+#waitlist form {
     padding-top: 20px;
 }
 
@@ -693,105 +726,135 @@ header .intro-text {
     text-align: left;
 }
 
-#contact .btn-custom {
+#contact .btn-custom,
+#waitlist .btn-custom,
+.btn-waitlist {
     margin: 30px 0;
-    background: transparent;
-    border: 2px solid #fff;
-}
-
-#contact .btn-custom:hover {
-    color: #1f386e;
-    background: #fff;
-}
-
-label {
-    font-size: 12px;
-    font-weight: 400;
-    font-family: "Open Sans", sans-serif;
-    float: left;
-}
-
-#contact .form-control {
-    display: block;
-    width: 100%;
-    padding: 6px 12px;
+    background: #9d4edd !important;
+    border: 2px solid #9d4edd !important;
+    color: #fff !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 14px 34px;
     font-size: 16px;
-    line-height: 1.42857143;
-    color: #444;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ddd;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    -webkit-transition: none;
-    -o-transition: none;
-    transition: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(157, 78, 221, 0.3);
+    letter-spacing: 0.5px;
+    width: 100%;
 }
 
-#contact .form-control:focus {
-    border-color: #999;
-    outline: 0;
-    -webkit-box-shadow: transparent;
-    box-shadow: transparent;
+#contact .btn-custom:hover,
+#waitlist .btn-custom:hover,
+.btn-waitlist:hover {
+    color: #fff !important;
+    background: #7b2cbf !important;
+    border-color: #7b2cbf !important;
+    box-shadow: 0 6px 18px rgba(123, 44, 191, 0.5);
+    transform: translateY(-3px);
 }
 
-.form-control::-webkit-input-placeholder {
-    color: #777;
+.waitlist-form {
+    background: rgba(26, 26, 46, 0.8);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.form-control:-moz-placeholder {
-    color: #777;
+.waitlist-feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff !important;
 }
 
-.form-control::-moz-placeholder {
-    color: #777;
+.waitlist-feature-item i {
+    color: #9d4edd;
+    font-size: 20px;
+    margin-right: 15px;
 }
 
-.form-control:-ms-input-placeholder {
-    color: #777;
+.waitlist-feature-item span {
+    color: #fff !important;
 }
 
-#contact .contact-item {
-    margin: 20px 0;
+.waitlist-count {
+    background: rgba(26, 26, 46, 0.6);
+    border-radius: 8px;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #fff !important;
 }
 
-#contact .contact-item span {
-    color: rgba(255, 255, 255, 1);
-    margin-bottom: 10px;
-    display: block;
-}
-
-#contact .contact-item i.fa {
+.waitlist-count i {
+    color: #9d4edd;
+    font-size: 20px;
     margin-right: 10px;
 }
 
-#contact .social {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    padding-top: 50px;
-    margin-top: 50px;
-    text-align: center;
+.waitlist-count span {
+    color: #fff !important;
+    font-weight: 600;
 }
 
-#contact .social ul li {
-    display: inline-block;
-    margin: 0 20px;
+label {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    float: left;
+    margin-bottom: 8px;
+    display: block;
+    color: #fff !important;
 }
 
-#contact .social i.fa {
-    font-size: 22px;
-    width: 48px;
-    height: 48px;
-    padding: 12px 0;
-    border: 2px solid #fff;
+#contact .form-control,
+#waitlist .form-control {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    line-height: 1.42857143;
     color: #fff;
-    border-radius: 50%;
-    transition: all 0.3s;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
-#contact .social i.fa:hover {
-    color: #608dfd;
-    background: #fff;
+#waitlist textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#contact .form-control:focus,
+#waitlist .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #9d4edd;
+    box-shadow: 0 0 0 3px rgba(157, 78, 221, 0.2);
+    outline: 0;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.beta-tag {
+    background: #7b2cbf;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-left: 15px;
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 

@@ -1,0 +1,276 @@
+.policy-page {
+    padding-top: 80px;
+    min-height: 100vh;
+    background: #f8f9fa;
+    /* Simplified background */
+    color: #333;
+}
+
+/* Main page header styles */
+.policy-header {
+    background: linear-gradient(135deg, #1a0732 0%, #140920 100%);
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    /* For positioning background elements */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow for depth */
+}
+
+/* Fix for header text visibility */
+.policy-header h1,
+.policy-header .effective-date,
+.policy-header p {
+    color: white !important;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.policy-header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+    /* Darker overlay for better text contrast */
+    z-index: 0;
+}
+
+.policy-header .container {
+    position: relative;
+    z-index: 1;
+    /* Ensure content sits above the overlay */
+}
+
+.policy-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    /* Better letter spacing for large headers */
+}
+
+.effective-date {
+    font-size: 1rem;
+    opacity: 0.9;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure header h2 elements are properly visible */
+.policy-header h2 {
+    color: #ffffff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.policy-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.policy-section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.policy-section:last-child {
+    border-bottom: none;
+}
+
+/* Section headings enhanced styles */
+.policy-section .section-title {
+    color: #230a41;
+    /* Dark purple for content section titles */
+    font-size: 1.8rem;
+    /* Slightly larger font */
+    font-weight: 700;
+    /* Bolder font weight */
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+    text-shadow: none;
+    /* No text shadow needed on light background */
+    letter-spacing: 0.5px;
+    /* Subtle letter spacing for better readability */
+    display: inline-block;
+    /* Allow the underline to be sized to the text */
+}
+
+/* Better underline styling */
+.policy-section .section-title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    /* Wider underline */
+    height: 4px;
+    /* Thicker underline */
+    background: linear-gradient(90deg, #7c13c1, #ff5678);
+    border-radius: 10px;
+}
+
+/* Add subtle indicator before section titles */
+.policy-section .section-title:before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 32px;
+    /* Match the height of the text */
+    background: #7c13c1;
+    border-radius: 4px;
+    margin-right: 12px;
+    vertical-align: middle;
+    opacity: 0.7;
+}
+
+.policy-section h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.policy-section h2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background: linear-gradient(90deg, #7c13c1, #ff5678);
+    border-radius: 10px;
+}
+
+.policy-section p {
+    margin-bottom: 15px;
+}
+
+.policy-section ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.policy-section li {
+    margin-bottom: 10px;
+}
+
+.policy-section a {
+    color: #7c13c1;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.policy-section a:hover {
+    color: #9516e7;
+    text-decoration: underline;
+}
+
+/* Add a back to home button */
+.policy-back-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    z-index: 100;
+    padding: 8px 15px;
+    background-color: rgba(81, 10, 152, 0.8);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.policy-back-link:hover {
+    background-color: rgba(124, 19, 193, 0.95);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.policy-back-link i {
+    margin-right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .policy-header {
+        padding: 40px 0;
+    }
+
+    .policy-header h1 {
+        font-size: 2rem;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .policy-section h2,
+    .policy-section .section-title {
+        font-size: 1.4rem;
+    }
+
+    .policy-section .section-title:before {
+        height: 24px;
+        width: 6px;
+    }
+
+    .policy-back-link {
+        font-size: 0.85rem;
+        padding: 7px 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .policy-header {
+        padding: 30px 0;
+    }
+
+    .policy-header h1 {
+        font-size: 1.8rem;
+        text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .policy-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .policy-content {
+        padding: 0 15px 40px;
+    }
+
+    .policy-section h2,
+    .policy-section .section-title {
+        font-size: 1.3rem;
+    }
+
+    .policy-back-link {
+        top: 10px;
+        left: 10px;
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        background-color: rgba(81, 10, 152, 0.9);
+    }
+
+    .policy-section .section-title:before {
+        height: 20px;
+        width: 5px;
+        margin-right: 8px;
+    }
+}
+
+/* Ensure all section headings are properly colored for their backgrounds */
+.policy-page .policy-section h2 {
+    color: #230a41;
+}

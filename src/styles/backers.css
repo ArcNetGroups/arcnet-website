@@ -1,0 +1,324 @@
+/* Backers Section - Showcasing Accelerator Programs */
+#backers {
+    padding: 80px 0 !important;
+    background: linear-gradient(135deg, #f8f6ff 0%, #efe5ff 100%) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+/* Decorative patterns */
+#backers::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-image:
+        radial-gradient(circle at 15% 30%, rgba(157, 78, 221, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 85% 70%, rgba(157, 78, 221, 0.05) 0%, transparent 40%) !important;
+    z-index: 1 !important;
+}
+
+/* Section styling */
+.backers-container {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.backers-title {
+    margin-bottom: 50px !important;
+    position: relative !important;
+}
+
+.backers-title h2 {
+    color: #5d2291 !important;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    margin-bottom: 15px !important;
+    position: relative !important;
+    display: inline-block !important;
+}
+
+.backers-title h2::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -10px !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto !important;
+    width: 70px !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, #5d2291, #9d4edd, #5d2291) !important;
+    border-radius: 3px !important;
+}
+
+.backers-title p {
+    color: #333 !important;
+    font-size: 18px !important;
+    margin-top: 20px !important;
+    max-width: 700px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Carousel styling with 3-second step animation */
+.backers-carousel {
+    width: 100% !important;
+    overflow: hidden !important;
+    position: relative !important;
+    padding: 30px 0 !important;
+    background: linear-gradient(to right, rgba(248, 246, 255, 0.7), rgba(239, 229, 255, 0.3), rgba(248, 246, 255, 0.7)) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 5px 15px rgba(93, 34, 145, 0.05) !important;
+}
+
+.backers-track {
+    display: flex !important;
+    width: 100% !important;
+    transition: transform 0.7s ease !important;
+    justify-content: center !important;
+}
+
+/* Logo item styling with active state */
+.backer-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 40px !important;
+    min-width: 280px !important;
+    height: 180px !important;
+    transition: all 0.5s ease !important;
+    opacity: 0.6 !important;
+    transform: scale(0.9) !important;
+    filter: grayscale(40%) !important;
+}
+
+.backer-item:hover {
+    opacity: 1 !important;
+    filter: grayscale(0%) !important;
+    z-index: 10 !important;
+}
+
+.backer-item.active {
+    opacity: 1 !important;
+    transform: scale(1.05) translateY(-5px) !important;
+    filter: grayscale(0%) !important;
+    z-index: 10 !important;
+}
+
+.backer-logo {
+    height: 80px !important;
+    margin-bottom: 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: all 0.3s ease !important;
+    padding: 15px !important;
+    background-color: white !important;
+    border-radius: 8px !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+}
+
+.backer-item:hover .backer-logo {
+    box-shadow: 0 8px 25px rgba(93, 34, 145, 0.2) !important;
+}
+
+.backer-item.active .backer-logo {
+    box-shadow: 0 8px 25px rgba(93, 34, 145, 0.2) !important;
+    padding: 18px !important;
+}
+
+.backer-logo img {
+    max-height: 80px !important;
+    max-width: 180px !important;
+    object-fit: contain !important;
+    transition: all 0.3s ease !important;
+}
+
+.backer-name {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #5d2291 !important;
+    margin-top: 15px !important;
+    text-align: center !important;
+    position: relative !important;
+    transition: all 0.3s ease !important;
+}
+
+.backer-item:hover .backer-name {
+    font-weight: 700 !important;
+}
+
+.backer-item.active .backer-name {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+.backer-name::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -5px !important;
+    left: 50% !important;
+    width: 0 !important;
+    height: 2px !important;
+    background: linear-gradient(90deg, #9d4edd, #5d2291) !important;
+    transition: all 0.3s ease !important;
+    transform: translateX(-50%) !important;
+}
+
+.backer-item:hover .backer-name::after {
+    width: 70% !important;
+}
+
+.backer-item.active .backer-name::after {
+    width: 70% !important;
+}
+
+/* Gradient overlays to indicate more content */
+.backers-carousel::before,
+.backers-carousel::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    width: 100px !important;
+    height: 100% !important;
+    z-index: 5 !important;
+    pointer-events: none !important;
+}
+
+.backers-carousel::before {
+    left: 0 !important;
+    background: linear-gradient(to right, rgba(248, 246, 255, 1), rgba(248, 246, 255, 0)) !important;
+}
+
+.backers-carousel::after {
+    right: 0 !important;
+    background: linear-gradient(to left, rgba(248, 246, 255, 1), rgba(248, 246, 255, 0)) !important;
+}
+
+/* Duplicated set for seamless looping */
+.backers-track-duplicate {
+    display: flex !important;
+    min-width: max-content !important;
+    justify-content: center !important;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+    #backers {
+        padding: 60px 0 !important;
+    }
+
+    .backers-title h2 {
+        font-size: 28px !important;
+    }
+
+    .backer-item {
+        min-width: 250px !important;
+        height: 160px !important;
+    }
+
+    .backer-logo {
+        height: 70px !important;
+    }
+
+    .backer-logo img {
+        max-height: 70px !important;
+        max-width: 160px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .backers-title {
+        margin-bottom: 30px !important;
+    }
+
+    .backers-title p {
+        font-size: 16px !important;
+        padding: 0 15px !important;
+    }
+
+    .backer-item {
+        min-width: 180px !important;
+        padding: 0 20px !important;
+        height: 140px !important;
+    }
+
+    .backer-logo {
+        height: 60px !important;
+        margin-bottom: 10px !important;
+        padding: 10px !important;
+    }
+
+    .backer-logo img {
+        max-height: 60px !important;
+        max-width: 120px !important;
+    }
+
+    .backer-name {
+        font-size: 14px !important;
+        margin-top: 10px !important;
+    }
+
+    .backer-item.active .backer-name {
+        font-size: 15px !important;
+    }
+
+    .backers-carousel::before,
+    .backers-carousel::after {
+        width: 60px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #backers {
+        padding: 50px 0 !important;
+    }
+
+    .backers-title h2 {
+        font-size: 24px !important;
+    }
+
+    .backers-title p {
+        font-size: 14px !important;
+    }
+
+    .backer-item {
+        min-width: 150px !important;
+        padding: 0 15px !important;
+        height: 120px !important;
+    }
+
+    .backer-logo {
+        height: 50px !important;
+        padding: 8px !important;
+    }
+
+    .backer-logo img {
+        max-height: 50px !important;
+        max-width: 100px !important;
+    }
+
+    .backer-item.active .backer-logo {
+        padding: 10px !important;
+    }
+
+    .backer-name {
+        font-size: 12px !important;
+    }
+
+    .backer-item.active .backer-name {
+        font-size: 13px !important;
+    }
+
+    .backers-carousel {
+        padding: 20px 0 !important;
+    }
+
+    .backers-carousel::before,
+    .backers-carousel::after {
+        width: 40px !important;
+    }
+}

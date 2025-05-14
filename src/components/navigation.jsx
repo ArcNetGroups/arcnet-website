@@ -1,11 +1,15 @@
 import React from "react";
-import './globalStyling.css'
+import "../styles/globalStyling.css";
+import "../styles/fixes.css";
+import "../styles/navbar.css";
+import primeLogo from '../img/logo/prime-logo.svg';
 
+// eslint-disable-next-line no-unused-vars
 export const Navigation = (props) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
-        <div className="nvvbar-header">
+        <div className="navbar-header">
           <button
             type="button"
             className="navbar-toggle collapsed"
@@ -19,7 +23,15 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            ArcNetLabs
+            <div className="brand-container">
+              <img src={primeLogo} alt="Prime Logo" className="brand-logo" />
+              <div className="brand-text-container">
+                <div className="p-wrapper">
+                  <span className="p-letter">p</span>
+                </div>
+                <span className="rime-text">rime</span>
+              </div>
+            </div>
           </a>{" "}
         </div>
 
@@ -28,22 +40,21 @@ export const Navigation = (props) => {
           id="bs-example-navbar-collapse-1"
         >
           <ul className="nav navbar-nav navbar-right">
-           
             <li>
               <a href="#about" className="page-scroll">
-                MISSION
+                ABOUT
               </a>
             </li>
-            
-             <li>
+
+            <li>
               <a href="#features" className="page-scroll">
-                Features
+                FEATURES
               </a>
             </li>
 
             <li>
               <a href="#services" className="page-scroll">
-               GOALS
+                SERVICES
               </a>
             </li>
             {/* <li>
@@ -58,12 +69,12 @@ export const Navigation = (props) => {
             </li> */}
             <li>
               <a href="#team" className="page-scroll">
-                Meet the Team
+                TEAM
               </a>
             </li>
             <li>
               <a href="#contact" className="page-scroll">
-                Contact
+                CONTACT
               </a>
             </li>
           </ul>

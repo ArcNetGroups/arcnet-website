@@ -1,0 +1,120 @@
+/* Text visibility fixes */
+
+/* Global text color overrides */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    color: #333 !important;
+}
+
+/* Navbar specific fixes */
+.navbar-default {
+    background-color: var(--prime-dark) !important;
+    border-color: transparent !important;
+}
+
+.navbar-default .navbar-brand {
+    color: white !important;
+    font-weight: 700;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white !important;
+    font-weight: 500;
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: var(--prime-accent) !important;
+    background-color: transparent;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white !important;
+}
+
+/* Exceptions for sections with dark backgrounds */
+.intro h1,
+.intro p,
+#footer p {
+    color: #fff !important;
+}
+
+.highlight {
+    color: #e0aaff !important;
+}
+
+/* Section headings */
+.section-title h2 {
+    color: #1a1a2e !important;
+    font-weight: 700;
+}
+
+/* Feature boxes */
+.feature-box h3 {
+    color: #1a1a2e !important;
+}
+
+.feature-box p {
+    color: #555 !important;
+}
+
+/* Service descriptions */
+#services h3 {
+    color: #1a1a2e !important;
+}
+
+.service-desc p {
+    color: #555 !important;
+}
+
+/* Team captions */
+#team .caption h4 {
+    color: #1a1a2e !important;
+}
+
+#team .caption p {
+    color: #7b2cbf !important;
+}
+
+/* Form elements and buttons */
+.form-control {
+    color: #333 !important;
+}
+
+.btn-custom {
+    color: #fff !important;
+}
+
+/* Contact section */
+.contact-item h3 {
+    color: #1a1a2e !important;
+}
+
+.contact-item p,
+.contact-item span {
+    color: #555 !important;
+}
+
+/* Social icons */
+#team .social a i {
+    color: #7b2cbf !important;
+}
+
+#team .social a:hover i {
+    color: #fff !important;
+}
+
+.social i.fa {
+    color: #7b2cbf !important;
+}
+
+.social i.fa:hover {
+    color: #fff !important;
+}

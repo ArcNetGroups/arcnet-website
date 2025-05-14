@@ -1,13 +1,14 @@
 {
     "Header": {
-        "title": "Redefining social media with <span class='highlight'>Arcnet</span>.",
-        "paragraph": "Your data and the information you see belong to you—fully under your control, free from manipulation by media, political, or corporate interests. Arcnet offers an independent, secure, and decentralized experience, empowering you with the freedom and privacy you deserve through blockchain technology."
+        "title": "Engage your audience like never before with <span class='highlight'>Prime</span>.",
+        "paragraph": "Your community deserves a platform that brings everything together. No more juggling multiple tools or fragmented experiences. Just seamless connection, meaningful engagement, and growth."
     },
     "About": {
-        "paragraph": "We aim to create a decentralized social media platform that champions freedom of speech, equitably distributes ad revenue among users, and protects user data. By leveraging blockchain technology, we empower users to engage in a censorship-free environment where their voices matter. Our platform fosters economic inclusion through features like SupCoins—short for support coins, tipping, ad revenue sharing, and an NFT marketplace, transforming social media into a space that prioritizes privacy, autonomy, and economic opportunity for all.",
-        "paragraph2": "The current social media landscape is characterized by fragmentation and redundancy. Users often find themselves juggling multiple apps, each requiring its own account setup and management. This not only complicates the user experience but also limits the potential for meaningful connections and engagement. We aims to address these issues by offering a singular, decentralized platform “Arcnet” that integrates various social apps, enabling users to carry forward their achievements, influence, and followers seamlessly across different services. We call it “Arcnet” because it's a network of unified social apps."
+        "paragraph": "Prime is designed specifically for small and medium-sized businesses and Subject Matter Experts who want to forge stronger connections with their audience. Whether you're looking to share premium content, host interactive sessions, or build a dedicated community, Prime provides all the tools you need in one unified platform.",
+        "paragraph2": "We're solving the fragmentation problem that plagues content creators and businesses today. No more juggling between Instagram, Zoom, WhatsApp, and Notion - Prime integrates all these functionalities into one seamless experience, helping you maintain consistent engagement with your audience."
     },
-    "Gallery": [{
+    "Gallery": [
+        {
             "title": "Project Title",
             "largeImage": "img/portfolio/01-large.jpg",
             "smallImage": "img/portfolio/01-small.jpg"
@@ -53,23 +54,25 @@
             "smallImage": "img/portfolio/09-small.jpg"
         }
     ],
-    "Services": [{
-            "icon": "fa fa-wordpress",
-            "name": "AI algorithms",
-            "text": "One of our main goals is to integrate AI algorithms into our transaction processing system, as current processes like mining and validation are resource-intensive, consuming significant energy and time, which results in slower transaction speeds and higher user costs."
+    "Services": [
+        {
+            "icon": "fa fa-comments",
+            "name": "Community Building",
+            "text": "Create dedicated spaces for your audience to connect, discuss, and engage with your content. Foster a sense of belonging and build a loyal community around your expertise or business."
         },
         {
-            "icon": "fa fa-cart-arrow-down",
-            "name": "AI mining",
-            "text": "By replacing traditional miners and validators with advanced AI algorithms capable of solving complex mathematical problems at lightning speed, we aim to transform the blockchain's efficiency."
+            "icon": "fa fa-video-camera",
+            "name": "Live Sessions",
+            "text": "Host interactive Q&A sessions, workshops, and coaching calls directly on the platform. Connect with your audience in real-time and provide personalized guidance and support."
         },
         {
-            "icon": "fa fa-cloud-download",
-            "name": "Quantum Computing",
-            "text": "Furthermore, by harnessing the power of Quantum Computing, we plan to further accelerate these processes, reducing transaction times and costs. This strategic shift not only promises to make our platform faster and more affordable."
+            "icon": "fa fa-file-text",
+            "name": "Premium Content",
+            "text": "Share exclusive content, resources, and materials with your audience. From detailed guides and tutorials to specialized knowledge, deliver value that keeps your audience coming back."
         }
     ],
-    "Testimonials": [{
+    "Testimonials": [
+        {
             "img": "img/testimonials/01.jpg",
             "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
             "name": "John Doe"
@@ -100,53 +103,54 @@
             "name": "Johnathan Doe"
         }
     ],
-    "Team": [{
-            "img": "img/team/Henry.jpg",
+    "Team": [
+        {
+            "img": "img/team/anime-avatar1.png",
             "name": "Henry Giwa",
-            "job": "Founder",
-            "linkedin": "https://www.linkedin.com/in/henrygiwa"
+            "job": "Visionary & Founder",
+            "linkedin": "https://www.linkedin.com/in/giwahenry/"
         },
         {
-            "img": "img/team/02.jpg",
-            "name": "Meghna Malasi",
-            "job": "Chief Technical officer",
-            "linkedin": "https://www.linkedin.com/in/meghnamalasi"
-
+            "img": "img/team/anime-avatar2.png",
+            "name": "Akira Tanaka",
+            "job": "Technical Genius",
+            "linkedin": "https://www.linkedin.com/"
         },
         {
-            "img": "img/team/03.jpg",
-            "name": "Kaushal Desai",
-            "job": "Blockchain developer",
-            "linkedin": "https://www.linkedin.com/in/kaushal-desai-bb79a4203/"
+            "img": "img/team/anime-avatar3.png",
+            "name": "Yuki Sato",
+            "job": "Design Wizard",
+            "linkedin": "https://www.linkedin.com/"
         }
     ],
     "Contact": {
-        "address": "Nigeria",
+        "address": "Lagos, Nigeria",
         "phone": "+1 123 456 1234",
-        "email": "contact.arcnetlabs@gmail.com",
+        "email": "company@arcnetlabs.com",
         "linkedin": "https://www.linkedin.com/company/arcnetlabs/",
         "twitter": "https://x.com/arcnetlabs",
         "youtube": "youtube.com"
     },
-    "Features": [{
+    "Features": [
+        {
             "icon": "fa fa-comments-o",
-            "title": "Support Coins",
-            "text": "Allows users to support and invest in content creators, potentially benefiting both parties through shared growth and revenue. You can give these coins to creators whose content you love, and they can use these coins to improve their work or even pay for things they need to keep creating."
+            "title": "All-in-One Platform",
+            "text": "Integrate content sharing, live sessions, community building, and direct communication all in one place. No more juggling between different platforms or losing engagement through fragmented experiences."
         },
         {
-            "icon": "fa fa-bullhorn",
-            "title": "NFT Marketplace",
-            "text": "A place where you can show off your creativity by creating, buying, and selling digital items known as NFTs. These aren't just pictures or videos; they're unique pieces of digital art that prove you were the first to own them."
+            "icon": "fa fa-users",
+            "title": "Deeper Audience Engagement",
+            "text": "Create meaningful connections with your audience through interactive features and dedicated spaces. Build loyalty and increase retention through genuine engagement and value delivery."
         },
         {
-            "icon": "fa fa-group",
-            "title": "Content Tipping",
-            "text": "Want to say thanks to someone for a great post or video? With content tipping, you can send small payments directly to creators as a way of saying thank you or showing appreciation for their hard work.These tips are sent in the form of creator coins, which are deposited into the creator's wallet."
+            "icon": "fa fa-lightbulb-o",
+            "title": "Knowledge Sharing",
+            "text": "Share your expertise through premium content, resources, and materials. Monetize your knowledge while providing real value to your audience."
         },
         {
-            "icon": "fa fa-magic",
-            "title": "Profile ownership",
-            "text": "User profiles are securely anchored to their blockchain wallet's public key, ensuring exclusive ownership and control. This model promotes privacy and prevents censorship, as profiles are inaccessible to anyone other than the owner. On Arcnet, your profile is yours alone. It's linked to something called a “wallet”, which is like a digital safe for your online life."
+            "icon": "fa fa-line-chart",
+            "title": "Business Growth",
+            "text": "Scale your business by focusing on what matters - creating quality content and building relationships - while Prime handles the technical infrastructure for delivery and engagement."
         }
     ]
 }

@@ -1,0 +1,179 @@
+.scroll-top-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(51, 0, 102, 0.85);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: none;
+    outline: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+}
+
+.scroll-top-button:hover {
+    background-color: rgba(81, 10, 152, 0.95);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.scroll-top-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.scroll-top-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(81, 10, 152, 0.3), 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.scroll-top-button svg {
+    transition: transform 0.2s ease;
+}
+
+.scroll-top-button:hover svg {
+    transform: translateY(-2px);
+}
+
+/* Styles for when button is at the bottom of the page */
+.scroll-top-button.at-bottom {
+    background-color: rgba(81, 10, 152, 0.95);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    bottom: 40px;
+    /* Position slightly higher when at bottom */
+}
+
+.scroll-top-button.at-bottom:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation for showing and hiding */
+.scroll-top-button.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    animation: buttonFadeIn 0.5s ease forwards;
+}
+
+.scroll-top-button.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    animation: buttonFadeOut 0.3s ease forwards;
+}
+
+@keyframes buttonFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes buttonFadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Add a small pulse animation when button is visible for a while */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transform: scale(1);
+    }
+
+    50% {
+        box-shadow: 0 6px 16px rgba(51, 0, 102, 0.4);
+        transform: scale(1.05);
+    }
+
+    100% {
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transform: scale(1);
+    }
+}
+
+/* Apply the pulse animation after the button has been visible for a while */
+.scroll-top-button.visible:not(:hover):not(.at-bottom) {
+    animation: pulse 2s infinite;
+    animation-delay: 2s;
+    /* Start pulsing after 2 seconds of visibility */
+}
+
+/* Special animation for at-bottom state */
+@keyframes bottomPulse {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.scroll-top-button.at-bottom.visible:not(:hover) {
+    animation: bottomPulse 2s infinite;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .scroll-top-button {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .scroll-top-button.at-bottom {
+        bottom: 30px;
+    }
+
+    .scroll-top-button svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .scroll-top-button {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .scroll-top-button.at-bottom {
+        bottom: 25px;
+    }
+
+    .scroll-top-button svg {
+        width: 18px;
+        height: 18px;
+    }
+}

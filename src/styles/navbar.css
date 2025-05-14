@@ -1,0 +1,263 @@
+/* Navbar styling */
+#menu.navbar-default {
+    background-color: rgba(12, 12, 20, 0.95) !important;
+    border-color: transparent !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+    padding: 15px 0 !important;
+    transition: all 0.3s ease !important;
+}
+
+#menu.navbar-default.scrolled {
+    background-color: rgba(12, 12, 20, 0.98) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Brand styling with logo */
+#menu.navbar-default .navbar-brand {
+    padding: 10px 15px !important;
+    /* Reduced padding to accommodate logo */
+    height: auto !important;
+}
+
+.brand-container {
+    display: flex !important;
+    align-items: center !important;
+    height: 100% !important;
+}
+
+.brand-logo {
+    height: 30px !important;
+    width: auto !important;
+    margin-right: 8px !important;
+    transition: all 0.3s ease !important;
+}
+
+.brand-text-container {
+    display: flex !important;
+    align-items: baseline !important;
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    letter-spacing: 0.5px !important;
+    font-family: 'Poppins', sans-serif !important;
+    text-transform: lowercase !important;
+    position: relative !important;
+}
+
+.rime-text {
+    color: #ffffff !important;
+    position: relative !important;
+    display: inline-block !important;
+    background: linear-gradient(120deg, #ffffff, #f0f0f0, #e8e8e8, #ffffff) !important;
+    background-size: 200% auto !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+    animation: subtle-shine 8s linear infinite !important;
+}
+
+.p-wrapper {
+    position: relative !important;
+    display: inline-block !important;
+    height: 100% !important;
+}
+
+/* Style for the 'p' character */
+.p-letter {
+    position: relative !important;
+    display: inline-block !important;
+    color: white !important;
+    margin-right: -1px !important;
+    font-weight: 600 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+    transform: translateY(-2px) !important;
+    vertical-align: baseline !important;
+}
+
+#menu.navbar-default .navbar-brand:hover .p-letter {
+    color: #7f3aaf !important;
+    transition: color 0.3s ease !important;
+}
+
+#menu.navbar-default .navbar-brand:hover .rime-text {
+    background: linear-gradient(90deg, #fff, #7f3aaf, #fff) !important;
+    background-size: 200% auto !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    animation: shine 2s linear infinite !important;
+}
+
+@keyframes subtle-shine {
+    0% {
+        background-position: 0% center !important;
+    }
+
+    100% {
+        background-position: 200% center !important;
+    }
+}
+
+/* Add a subtle highlight/underline effect */
+.brand-text-container::after {
+    content: '' !important;
+    position: absolute !important;
+    left: 0 !important;
+    bottom: 2px !important;
+    width: 100% !important;
+    height: 2px !important;
+    background: linear-gradient(90deg, rgba(127, 58, 175, 0), rgba(127, 58, 175, 0.7), rgba(127, 58, 175, 0)) !important;
+    opacity: 0.6 !important;
+    transform: scaleX(0.7) !important;
+    transform-origin: center !important;
+    transition: all 0.3s ease !important;
+}
+
+#menu.navbar-default .navbar-brand:hover .brand-text-container::after {
+    transform: scaleX(1) !important;
+    opacity: 0.8 !important;
+    background: linear-gradient(90deg, rgba(127, 58, 175, 0), rgba(127, 58, 175, 1), rgba(127, 58, 175, 0)) !important;
+}
+
+#menu.navbar-default .navbar-brand:hover .brand-logo {
+    transform: scale(1.05) !important;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center !important;
+    }
+}
+
+#menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    padding: 10px 15px !important;
+    margin: 0 5px !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+    border-radius: 4px !important;
+}
+
+#menu.navbar-default .navbar-nav>li>a:hover,
+#menu.navbar-default .navbar-nav>li>a:focus {
+    color: #7f3aaf !important;
+    background-color: transparent !important;
+}
+
+#menu.navbar-default .navbar-nav>li>a.active {
+    color: #7f3aaf !important;
+}
+
+#menu.navbar-default .navbar-toggle {
+    border-color: transparent !important;
+    margin-top: 8px !important;
+}
+
+#menu.navbar-default .navbar-toggle:hover,
+#menu.navbar-default .navbar-toggle:focus {
+    background-color: transparent !important;
+}
+
+#menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff !important;
+    height: 2px !important;
+    width: 22px !important;
+    transition: all 0.3s ease !important;
+}
+
+#menu.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #7f3aaf !important;
+}
+
+/* Mobile collapse styling */
+#menu.navbar-default .navbar-collapse {
+    border-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+    #menu.navbar-default {
+        padding: 10px 0 !important;
+    }
+
+    #menu.navbar-default .navbar-brand {
+        padding: 8px 15px !important;
+    }
+
+    #menu.navbar-default .navbar-collapse {
+        background-color: rgba(12, 12, 20, 0.98) !important;
+        padding: 10px 0 !important;
+        border-radius: 0 0 10px 10px !important;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) !important;
+        max-height: 80vh !important;
+        /* Limit max height on mobile */
+        overflow-y: auto !important;
+        /* Enable scrolling for many menu items */
+    }
+
+    #menu.navbar-default .navbar-nav>li>a {
+        padding: 12px 20px !important;
+        text-align: center !important;
+        margin: 5px 15px !important;
+        border-radius: 6px !important;
+    }
+
+    #menu.navbar-default .navbar-nav>li>a:hover {
+        background-color: rgba(157, 78, 221, 0.1) !important;
+    }
+
+    .brand-logo {
+        height: 25px !important;
+    }
+
+    .brand-text {
+        font-size: 20px !important;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    .brand-text::after {
+        height: 1.5px !important;
+        bottom: 1px !important;
+    }
+
+    .brand-text-container {
+        font-size: 20px !important;
+    }
+
+    .p-letter {
+        font-size: 20px !important;
+        transform: translateY(-1.5px) !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #menu.navbar-default {
+        padding: 8px 0 !important;
+    }
+
+    #menu.navbar-default .navbar-brand {
+        padding: 8px 10px !important;
+    }
+
+    .brand-logo {
+        height: 22px !important;
+        margin-right: 5px !important;
+    }
+
+    .brand-text-container {
+        font-size: 18px !important;
+    }
+
+    .p-letter {
+        font-size: 18px !important;
+    }
+
+    #menu.navbar-default .navbar-toggle {
+        margin-right: 10px !important;
+    }
+
+    #menu.navbar-default .navbar-nav>li>a {
+        padding: 10px 15px !important;
+        font-size: 13px !important;
+    }
+}

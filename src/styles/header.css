@@ -1,0 +1,941 @@
+/* Header/Intro section styling */
+.intro {
+    background-color: #0f0a19 !important;
+    padding: 30px 0 30px 0 !important;
+    position: relative !important;
+    text-align: center !important;
+    overflow: hidden !important;
+    min-height: 80vh !important;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239d4edd' fill-opacity='0.3'%3E%3Cpath d='M50 25L75 0H25L50 25ZM50 75L25 100H75L50 75ZM25 50L0 75V25L25 50ZM75 50L100 25V75L75 50Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") !important;
+    background-size: 150px 150px !important;
+    animation: backgroundSlide 30s linear infinite !important;
+}
+
+@keyframes backgroundSlide {
+    0% {
+        background-position: 0 0 !important;
+    }
+
+    100% {
+        background-position: 300px 300px !important;
+    }
+}
+
+.intro:before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(135deg, rgba(15, 10, 25, 0.8) 0%, rgba(15, 10, 25, 0.7) 100%),
+        radial-gradient(circle at 10% 100%, rgba(93, 34, 145, 0.6) 0%, transparent 50%),
+        radial-gradient(circle at 90% 100%, rgba(127, 58, 175, 0.6) 0%, transparent 50%) !important;
+    z-index: 1 !important;
+}
+
+/* Add animated particles */
+.intro:after {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(157, 78, 221, 0.4) 0%, rgba(157, 78, 221, 0) 5%),
+        radial-gradient(circle at 70% 20%, rgba(157, 78, 221, 0.6) 0%, rgba(157, 78, 221, 0) 5%),
+        radial-gradient(circle at 40% 70%, rgba(157, 78, 221, 0.5) 0%, rgba(157, 78, 221, 0) 5%),
+        radial-gradient(circle at 80% 60%, rgba(157, 78, 221, 0.4) 0%, rgba(157, 78, 221, 0) 5%),
+        radial-gradient(circle at 10% 40%, rgba(157, 78, 221, 0.5) 0%, rgba(157, 78, 221, 0) 5%),
+        radial-gradient(circle at 90% 90%, rgba(157, 78, 221, 0.6) 0%, rgba(157, 78, 221, 0) 5%),
+        radial-gradient(circle at 30% 10%, rgba(157, 78, 221, 0.5) 0%, rgba(157, 78, 221, 0) 5%),
+        radial-gradient(circle at 60% 50%, rgba(157, 78, 221, 0.4) 0%, rgba(157, 78, 221, 0) 5%) !important;
+    background-size: 200% 200% !important;
+    animation: pulse 8s ease-in-out infinite alternate !important;
+    z-index: 2 !important;
+    pointer-events: none !important;
+}
+
+@keyframes pulse {
+    0% {
+        background-position: 0% 0% !important;
+        opacity: 0.8 !important;
+    }
+
+    100% {
+        background-position: 100% 100% !important;
+        opacity: 1 !important;
+    }
+}
+
+/* Enhanced floating shapes */
+.floating-shape {
+    position: absolute !important;
+    border-radius: 50% !important;
+    z-index: 3 !important;
+    opacity: 0.3 !important;
+    filter: blur(3px) !important;
+    box-shadow: 0 0 30px rgba(157, 78, 221, 0.8) !important;
+}
+
+.shape-1 {
+    width: 400px !important;
+    height: 400px !important;
+    bottom: -150px !important;
+    left: -100px !important;
+    background: #9d4edd !important;
+    animation: pulsateShape 6s infinite alternate ease-in-out !important;
+}
+
+.shape-2 {
+    width: 300px !important;
+    height: 300px !important;
+    top: 50px !important;
+    right: -80px !important;
+    background: #7b2cbf !important;
+    animation: pulsateShape 8s infinite alternate-reverse ease-in-out !important;
+}
+
+/* Add a third shape */
+.intro .overlay:before {
+    content: '' !important;
+    position: absolute !important;
+    width: 250px !important;
+    height: 250px !important;
+    top: 40% !important;
+    left: 30% !important;
+    background: #bb5eff !important;
+    border-radius: 50% !important;
+    opacity: 0.2 !important;
+    filter: blur(40px) !important;
+    z-index: 2 !important;
+    animation: pulsateShape 10s infinite alternate ease-in-out !important;
+}
+
+@keyframes pulsateShape {
+    0% {
+        transform: scale(1) !important;
+        opacity: 0.2 !important;
+    }
+
+    50% {
+        transform: scale(1.1) !important;
+        opacity: 0.3 !important;
+    }
+
+    100% {
+        transform: scale(1) !important;
+        opacity: 0.2 !important;
+    }
+}
+
+.intro .overlay {
+    background: transparent !important;
+    padding: 60px 0 !important;
+    position: relative !important;
+    z-index: 5 !important;
+}
+
+.intro-text {
+    padding-top: 30px !important;
+    position: relative !important;
+    z-index: 10 !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+}
+
+.intro h1 {
+    color: #ffffff !important;
+    font-size: 72px !important;
+    font-weight: 700 !important;
+    margin-bottom: 30px !important;
+    line-height: 1.2 !important;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), 0 0 20px rgba(157, 78, 221, 0.5) !important;
+    position: relative !important;
+    z-index: 5 !important;
+    letter-spacing: -0.5px !important;
+    animation: textGlow 3s infinite alternate !important;
+    display: inline-block !important;
+    position: relative !important;
+    overflow: visible !important;
+}
+
+/* Add a decorative element behind the title */
+.intro h1:before {
+    content: "" !important;
+    position: absolute !important;
+    width: 120% !important;
+    height: 140% !important;
+    top: -20% !important;
+    left: -10% !important;
+    background:
+        radial-gradient(circle at top left, rgba(93, 34, 145, 0.05) 0%, transparent 60%),
+        radial-gradient(circle at bottom right, rgba(187, 94, 255, 0.05) 0%, transparent 60%) !important;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important;
+    z-index: -1 !important;
+    animation: morphBackground 10s ease-in-out infinite alternate !important;
+}
+
+@keyframes morphBackground {
+    0% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% !important;
+    }
+
+    50% {
+        border-radius: 70% 30% 30% 70% / 60% 40% 60% 40% !important;
+    }
+
+    100% {
+        border-radius: 40% 60% 60% 40% / 40% 60% 40% 60% !important;
+    }
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(157, 78, 221, 0.3) !important;
+        transform: scale(1) !important;
+    }
+
+    100% {
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3), 0 0 30px rgba(157, 78, 221, 0.7) !important;
+        transform: scale(1.02) !important;
+    }
+}
+
+.intro p {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 20px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 50px !important;
+    max-width: 700px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 0 15px rgba(157, 78, 221, 0.3) !important;
+    position: relative !important;
+    z-index: 5 !important;
+    font-weight: 400 !important;
+    overflow: visible !important;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.85)) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    animation: textShine 8s infinite linear !important;
+    background-size: 200% 100% !important;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: -100% 0 !important;
+    }
+
+    100% {
+        background-position: 200% 0 !important;
+    }
+}
+
+/* Header text styling with highlight for "Prime" */
+.highlight {
+    color: #bb5eff !important;
+    font-weight: 700 !important;
+    position: relative !important;
+    display: inline-block !important;
+    background: linear-gradient(120deg, #5d2291, #9d4edd, #bb5eff, #d084ff, #bb5eff) !important;
+    background-size: 200% auto !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    padding: 0 8px !important;
+    margin: 0 -4px !important;
+    transform-origin: center !important;
+    /* Combined animation: gradient flow + shake every few seconds */
+    animation: primeAnimation 10s infinite !important;
+}
+
+/* Combined animation with shake happening during a short portion of the cycle */
+@keyframes primeAnimation {
+
+    /* Normal state with gradient animation */
+    0%,
+    10% {
+        transform: rotate(-2deg) !important;
+        background-position: 0% center !important;
+    }
+
+    20% {
+        transform: rotate(-2deg) !important;
+        background-position: 100% center !important;
+    }
+
+    40% {
+        transform: rotate(-2deg) !important;
+        background-position: 0% center !important;
+    }
+
+    60% {
+        transform: rotate(-2deg) !important;
+        background-position: 100% center !important;
+    }
+
+    /* Shake starts here - around 80% mark */
+    80% {
+        transform: rotate(-2deg) !important;
+        background-position: 0% center !important;
+    }
+
+    /* Shake sequence */
+    82% {
+        transform: rotate(-4deg) translate(-2px, 0) !important;
+    }
+
+    84% {
+        transform: rotate(0deg) translate(2px, -2px) !important;
+    }
+
+    86% {
+        transform: rotate(-3deg) translate(-3px, 1px) !important;
+    }
+
+    88% {
+        transform: rotate(2deg) translate(2px, -1px) !important;
+    }
+
+    90% {
+        transform: rotate(-2deg) translate(-2px, 2px) !important;
+    }
+
+    92% {
+        transform: rotate(1deg) translate(1px, -1px) !important;
+    }
+
+    94% {
+        transform: rotate(-1deg) translate(-1px, 1px) !important;
+    }
+
+    /* Return to normal state */
+    96%,
+    100% {
+        transform: rotate(-2deg) !important;
+        background-position: 0% center !important;
+    }
+}
+
+.highlight:after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -2px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 10px !important;
+    background: linear-gradient(90deg, rgba(93, 34, 145, 0.2), rgba(157, 78, 221, 0.4), rgba(208, 132, 255, 0.5), rgba(157, 78, 221, 0.4), rgba(93, 34, 145, 0.2)) !important;
+    z-index: -1 !important;
+    border-radius: 6px !important;
+    animation: underlineAnimation 10s infinite !important;
+}
+
+/* Matching animation for the underline, synchronized with the text */
+@keyframes underlineAnimation {
+
+    /* Normal pulse animation */
+    0%,
+    10% {
+        transform: rotate(1deg) !important;
+        opacity: 0.5 !important;
+        height: 8px !important;
+        filter: blur(1px) !important;
+    }
+
+    20% {
+        transform: rotate(1deg) !important;
+        opacity: 0.6 !important;
+        height: 10px !important;
+        filter: blur(1.5px) !important;
+    }
+
+    40% {
+        transform: rotate(1deg) !important;
+        opacity: 0.8 !important;
+        height: 12px !important;
+        filter: blur(2px) !important;
+    }
+
+    60% {
+        transform: rotate(1deg) !important;
+        opacity: 0.7 !important;
+        height: 10px !important;
+        filter: blur(1.5px) !important;
+    }
+
+    80% {
+        transform: rotate(1deg) !important;
+        opacity: 0.6 !important;
+        height: 8px !important;
+        filter: blur(1px) !important;
+    }
+
+    /* Shake sequence synchronized with the text */
+    82% {
+        transform: rotate(-1deg) translate(-1px, 0) !important;
+    }
+
+    84% {
+        transform: rotate(2deg) translate(2px, 0) !important;
+    }
+
+    86% {
+        transform: rotate(0deg) translate(-2px, 1px) !important;
+    }
+
+    88% {
+        transform: rotate(3deg) translate(1px, 0) !important;
+    }
+
+    90% {
+        transform: rotate(0deg) translate(-2px, 1px) !important;
+    }
+
+    92% {
+        transform: rotate(2deg) translate(2px, 0) !important;
+    }
+
+    94% {
+        transform: rotate(-1deg) translate(-1px, 0) !important;
+    }
+
+    /* Return to normal state */
+    96%,
+    100% {
+        transform: rotate(1deg) !important;
+        opacity: 0.5 !important;
+        height: 8px !important;
+        filter: blur(1px) !important;
+    }
+}
+
+.btn-container {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    flex-wrap: wrap !important;
+}
+
+.intro .btn-custom {
+    background: linear-gradient(135deg, #5d2291 0%, #7f3aaf 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 30px !important;
+    padding: 16px 32px !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(93, 34, 145, 0.4), 0 0 20px rgba(157, 78, 221, 0.2) !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    min-width: 200px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    z-index: 10 !important;
+}
+
+.intro .btn-outline {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: white !important;
+    border: 2px solid rgba(255, 255, 255, 0.7) !important;
+    border-radius: 30px !important;
+    padding: 14px 30px !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+    min-width: 200px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 255, 255, 0.1) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    z-index: 10 !important;
+}
+
+.intro .btn-custom:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 25px rgba(93, 34, 145, 0.5), 0 0 30px rgba(157, 78, 221, 0.4) !important;
+    background: linear-gradient(135deg, #7f3aaf 0%, #9d4edd 100%) !important;
+}
+
+.intro .btn-outline:hover {
+    background: rgba(255, 255, 255, 0.15) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 30px rgba(255, 255, 255, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Add shine effect to buttons */
+.intro .btn-custom:after,
+.intro .btn-outline:after {
+    content: '' !important;
+    position: absolute !important;
+    top: -50% !important;
+    left: -50% !important;
+    width: 200% !important;
+    height: 200% !important;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%) !important;
+    transform: rotate(30deg) !important;
+    opacity: 0 !important;
+    transition: opacity 0.6s !important;
+    z-index: -1 !important;
+}
+
+.intro .btn-custom:hover:after,
+.intro .btn-outline:hover:after {
+    opacity: 1 !important;
+    animation: shine 1.5s forwards !important;
+}
+
+@keyframes shine {
+    0% {
+        opacity: 0 !important;
+        transform: scale(0) rotate(30deg) !important;
+    }
+
+    50% {
+        opacity: 1 !important;
+    }
+
+    100% {
+        opacity: 0 !important;
+        transform: scale(3) rotate(30deg) !important;
+    }
+}
+
+/* Platform illustration styling */
+.platform-illustration {
+    position: relative !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+}
+
+.platform-mockup {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 380px !important;
+    margin: 0 auto !important;
+    z-index: 10 !important;
+    transform: perspective(1000px) rotateY(-10deg) rotateX(5deg) !important;
+    transition: all 0.5s ease !important;
+}
+
+.platform-mockup:hover {
+    transform: perspective(1000px) rotateY(-5deg) rotateX(2deg) !important;
+}
+
+.device-frame {
+    background: linear-gradient(145deg, #120d1e, #1a1028) !important;
+    border-radius: 20px !important;
+    padding: 15px !important;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+    overflow: hidden !important;
+}
+
+.device-content {
+    background-color: #0a0812 !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+    color: white !important;
+    min-height: 360px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.content-header {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 25px !important;
+    padding-bottom: 15px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.app-icon {
+    width: 40px !important;
+    height: 40px !important;
+    background: linear-gradient(135deg, #5d2291 0%, #7f3aaf 100%) !important;
+    /* Darker purple gradient */
+    border-radius: 10px !important;
+    margin-right: 15px !important;
+    position: relative !important;
+    box-shadow: 0 5px 15px rgba(93, 34, 145, 0.3) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+}
+
+.app-icon:before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-image: url('../img/logo/prime-logo.svg') !important;
+    background-size: 80% 80% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.app-title {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    color: white !important;
+    letter-spacing: 0.5px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.content-body {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+    margin-bottom: 25px !important;
+}
+
+.feature-item {
+    display: flex !important;
+    align-items: center !important;
+    padding: 15px !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    transition: all 0.3s ease !important;
+}
+
+.feature-item:hover {
+    transform: translateX(5px) !important;
+    background-color: rgba(157, 78, 221, 0.1) !important;
+    border-color: rgba(157, 78, 221, 0.3) !important;
+}
+
+.feature-icon {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% !important;
+    background-color: rgba(93, 34, 145, 0.2) !important;
+    margin-right: 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+}
+
+.feature-icon:before {
+    font-family: FontAwesome !important;
+    color: #7f3aaf !important;
+    font-size: 18px !important;
+}
+
+.video-feature .feature-icon:before {
+    content: '\f03d' !important;
+    /* Video camera icon */
+}
+
+.community-feature .feature-icon:before {
+    content: '\f0c0' !important;
+    /* Users/group icon */
+}
+
+.content-feature .feature-icon:before {
+    content: '\f15c' !important;
+    /* File/document icon */
+}
+
+.feature-label {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: white !important;
+}
+
+.content-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding-top: 15px !important;
+}
+
+.engagement-metrics {
+    display: flex !important;
+    justify-content: space-around !important;
+}
+
+.metric {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.metric .count {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: #7f3aaf !important;
+}
+
+.metric .label {
+    font-size: 14px !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    margin-top: 5px !important;
+}
+
+.device-reflection {
+    position: absolute !important;
+    bottom: -20px !important;
+    left: 5% !important;
+    width: 90% !important;
+    height: 20px !important;
+    background: radial-gradient(ellipse at center, rgba(93, 34, 145, 0.3) 0%, transparent 70%) !important;
+    filter: blur(5px) !important;
+    opacity: 0.7 !important;
+}
+
+/* Floating elements around the mockup */
+.floating-element {
+    position: absolute !important;
+    z-index: 5 !important;
+    border-radius: 50% !important;
+    filter: blur(1px) !important;
+    opacity: 0.8 !important;
+    animation: float 6s infinite ease-in-out !important;
+}
+
+.element-1 {
+    width: 60px !important;
+    height: 60px !important;
+    background: radial-gradient(circle at center, rgba(93, 34, 145, 0.7), transparent) !important;
+    top: 20% !important;
+    right: 10% !important;
+    animation-delay: 0s !important;
+}
+
+.element-2 {
+    width: 40px !important;
+    height: 40px !important;
+    background: radial-gradient(circle at center, rgba(77, 28, 120, 0.7), transparent) !important;
+    bottom: 30% !important;
+    right: 15% !important;
+    animation-delay: 2s !important;
+}
+
+.element-3 {
+    width: 30px !important;
+    height: 30px !important;
+    background: radial-gradient(circle at center, rgba(127, 58, 175, 0.7), transparent) !important;
+    top: 60% !important;
+    right: 25% !important;
+    animation-delay: 4s !important;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) !important;
+    }
+
+    50% {
+        transform: translateY(-20px) !important;
+    }
+}
+
+/* Adjust intro text alignment for the split layout */
+.intro-text {
+    padding-top: 30px !important;
+    position: relative !important;
+    z-index: 10 !important;
+    margin: 0 auto !important;
+    text-align: left !important;
+    /* Align text to left */
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .intro-text {
+        text-align: center !important;
+        margin-bottom: 50px !important;
+    }
+
+    .platform-mockup {
+        transform: perspective(1000px) rotateY(0deg) rotateX(0deg) !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+        /* Center mockup on tablet */
+    }
+
+    .platform-illustration {
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        padding: 120px 0 80px 0 !important;
+    }
+
+    .intro h1 {
+        font-size: 36px !important;
+        /* Further reduced for better mobile display */
+        line-height: 1.3 !important;
+    }
+
+    .intro p {
+        font-size: 16px !important;
+        padding: 0 !important;
+        margin: 20px 0 !important;
+    }
+
+    .btn-container {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    .intro .btn-custom,
+    .intro .btn-outline {
+        margin: 7px 0 !important;
+        width: 100% !important;
+        /* Full width buttons on mobile */
+        max-width: 280px !important;
+    }
+
+    .device-content {
+        min-height: 320px !important;
+    }
+
+    .col-md-6 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    /* Hide decorative elements that might clutter mobile view */
+    .floating-element.element-1,
+    .floating-element.element-3 {
+        display: none !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro {
+        padding: 100px 0 60px 0 !important;
+    }
+
+    .intro h1 {
+        font-size: 32px !important;
+        padding: 0 10px !important;
+    }
+
+    .intro p {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+        margin: 16px 0 !important;
+    }
+
+    .platform-mockup {
+        max-width: 260px !important;
+        margin-top: 20px !important;
+    }
+
+    .device-content {
+        min-height: 280px !important;
+        padding: 12px !important;
+    }
+
+    .feature-item {
+        padding: 10px !important;
+    }
+
+    /* Hide all decorative elements on very small screens */
+    .floating-element,
+    .floating-shape {
+        display: none !important;
+    }
+
+    /* Adjust wave height for small screens */
+    .header-wave-container {
+        height: 100px !important;
+    }
+}
+
+/* Header wave transition */
+.header-wave-container {
+    position: absolute !important;
+    bottom: -1px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 150px !important;
+    overflow: hidden !important;
+    line-height: 0 !important;
+    z-index: 5 !important;
+}
+
+.header-wave {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+}
+
+.wave {
+    animation-duration: 12s !important;
+    animation-iteration-count: infinite !important;
+    animation-timing-function: ease-in-out !important;
+}
+
+.wave1 {
+    animation-name: wave-animation-1 !important;
+}
+
+.wave2 {
+    animation-name: wave-animation-2 !important;
+    animation-delay: 1s !important;
+}
+
+@keyframes wave-animation-1 {
+
+    0%,
+    100% {
+        transform: translateY(0) !important;
+    }
+
+    50% {
+        transform: translateY(-15px) !important;
+    }
+}
+
+@keyframes wave-animation-2 {
+    0% {
+        transform: translate3d(0, 0, 0) !important;
+    }
+
+    50% {
+        transform: translate3d(-25%, 0, 0) !important;
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0) !important;
+    }
+}
+
+/* About Section */
+#about {
+    padding: 100px 0 !important;
+    position: relative !important;
+    background: linear-gradient(135deg, #0f0a19 0%, #1a0e2e 100%) !important;
+    overflow: hidden !important;
+}
+
+/* Main heading style */
+.about-main-heading {
+    color: #fff !important;
+    font-weight: 700 !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+}
