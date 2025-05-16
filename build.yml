@@ -2,8 +2,8 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm install 7.6.0
-        - nvm use 7.6.0
+        - nvm install 6.22.3
+        - nvm use 6.22.3
         - node -v  # (Optional) to log the current version
         - npm install
     build:
