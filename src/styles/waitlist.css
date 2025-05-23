@@ -135,12 +135,11 @@
 .waitlist-form .form-control {
     background-color: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #fff;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-size: 15px;
     border-radius: 8px;
-    height: 50px;
-    padding: 10px 15px;
     transition: all 0.3s ease;
-    font-size: 16px;
 }
 
 .waitlist-form textarea.form-control {
@@ -150,13 +149,27 @@
 }
 
 .waitlist-form .form-control:focus {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #ffffff !important;
     border-color: #9d4edd;
-    box-shadow: 0 0 0 3px rgba(157, 78, 221, 0.2);
+    color: #121420 !important;
+    box-shadow: 0 0 0 0.2rem rgba(157, 78, 221, 0.25);
 }
 
 .waitlist-form .form-control::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.waitlist-form .form-control:focus::placeholder {
+    color: rgba(18, 20, 32, 0.5);
+}
+
+/* Add styles for autofill */
+.waitlist-form .form-control:-webkit-autofill,
+.waitlist-form .form-control:-webkit-autofill:hover,
+.waitlist-form .form-control:-webkit-autofill:focus {
+    -webkit-text-fill-color: #121420 !important;
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 .waitlist-form label {
