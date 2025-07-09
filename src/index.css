@@ -92,6 +92,37 @@
   }
 }
 
+/* Shake animation for CTA buttons */
+@keyframes subtleShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px) rotate(-1deg); }
+  50% { transform: translateX(2px) rotate(1deg); }
+  75% { transform: translateX(-1px) rotate(0.5deg); }
+}
+
+.animate-subtle-shake {
+  animation: subtleShake 0.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+.animate-subtle-shake:hover {
+  animation: none;
+}
+
+/* Add a pulsing effect on hover */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+.cta-button {
+  transition: transform 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+  animation: pulse 2s infinite;
+}
+
 @layer base {
   * {
     @apply border-border;

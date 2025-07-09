@@ -43,18 +43,23 @@ const Logo: React.FC<LogoProps> = ({ className = '', showText = true, size = 'md
           >
             <defs>
               <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="200%">
-                <stop offset="0%" stopColor="#ffffff" />
-                <stop offset="50%" stopColor="#f3f4f6" />
-                <stop offset="100%" stopColor="#9ca3af" />
+                <stop offset="0%" stopColor="#d1d5db" />
+                <stop offset="50%" stopColor="#9ca3af" />
+                <stop offset="100%" stopColor="#6b7280" />
               </linearGradient>
               <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                 <stop offset="0%" stopColor="#e5e7eb" />
-                <stop offset="50%" stopColor="#9ca3af" />
-                <stop offset="100%" stopColor="#4b5563" />
+                <stop offset="50%" stopColor="#d1d5db" />
+                <stop offset="100%" stopColor="#9ca3af" />
               </linearGradient>
               <linearGradient id="innerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="#f3f4f6" />
-                <stop offset="100%" stopColor="#9ca3af" />
+                <stop offset="0%" stopColor="#f9fafb" />
+                <stop offset="100%" stopColor="#e5e7eb" />
+              </linearGradient>
+              <linearGradient id="subtleGreyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#6b7280" />
+                <stop offset="50%" stopColor="#4b5563" />
+                <stop offset="100%" stopColor="#1f2937" />
               </linearGradient>
               <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
                 <feGaussianBlur stdDeviation="2" result="blur" />
@@ -63,26 +68,27 @@ const Logo: React.FC<LogoProps> = ({ className = '', showText = true, size = 'md
             </defs>
             
             <g filter="url(#glow)">
-              {/* Main P shape with body gradient */}
+              {/* Main P shape with gradient - now darker */}
               <path 
                 d="M30 20h30c8.28 0 15 6.72 15 15s-6.72 15-15 15H50v30H30V20z" 
-                fill="url(#bodyGradient)"
-                stroke="rgba(255,255,255,0.15)"
+                fill="url(#mainGradient)"
+                stroke="rgba(0,0,0,0.2)"
                 strokeWidth="2"
                 strokeLinejoin="round"
               />
               
-              {/* Top curve highlight */}
+              {/* Darker overlay for the body */}
               <path 
-                d="M30 20h30c8.28 0 15 6.72 15 15s-6.72 15-15 15H50V20h-20z" 
-                fill="url(#mainGradient)"
-                fillOpacity="0.7"
+                d="M30 20h30c8.28 0 15 6.72 15 15s-6.72 15-15 15H50V20H30z" 
+                fill="#1f2937"
+                fillOpacity="0.4"
               />
               
+              {/* Inner part of the P - lighter */}
               <path 
                 d="M50 20v30h10c4.14 0 7.5-3.36 7.5-7.5S64.14 35 60 35H50V20z" 
                 fill="url(#innerGradient)"
-                fillOpacity="0.8"
+                fillOpacity="0.9"
               />
             </g>
           </svg>

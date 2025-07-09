@@ -112,9 +112,13 @@ const Pricing = () => {
                   ))}
                 </ul>
                 <div className="mt-auto pt-4">
-                  <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-base font-medium rounded-full h-auto py-3">
-                    {plan.cta}
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                  <Button 
+                    className={`w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-base font-medium rounded-full h-auto py-3 ${plan.cta === 'Get Started' ? 'animate-subtle-shake' : ''}`}
+                  >
+                    <div className="flex items-center justify-center">
+                      {plan.cta}
+                      {plan.cta !== 'Contact Us' && <ArrowRight className="ml-2 h-4 w-4" />}
+                    </div>
                   </Button>
                 </div>
               </CardContent>

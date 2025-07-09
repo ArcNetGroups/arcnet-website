@@ -33,11 +33,11 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center mb-12 md:mb-16 px-4">
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-base md:text-lg px-8 md:px-10 py-3 md:py-4 h-auto rounded-full min-h-[48px]"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-base md:text-lg px-8 md:px-10 py-3 md:py-4 h-auto rounded-full min-h-[48px] animate-subtle-shake"
             onClick={scrollToWaitlist}
           >
             Join the Waitlist
-            <ArrowRight className="ml-2 md:ml-3 h-4 w-4 md:h-5 md:w-5" />
+            <ArrowRight className="inline-block ml-2 h-4 w-4" />
           </Button>
           <Button 
             size="lg" 
