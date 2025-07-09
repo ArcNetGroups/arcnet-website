@@ -1,8 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Logo from "./Logo";
+import { scrollToWaitlist } from "@/utils/scrollToWaitlist";
 
 const Navigation = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -47,7 +47,10 @@ const Navigation = () => {
 
           {/* Desktop CTA Button */}
           <div className="hidden lg:flex items-center">
-            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-full">
+            <Button 
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-full"
+              onClick={scrollToWaitlist}
+            >
               Join Waitlist
             </Button>
           </div>
@@ -79,7 +82,13 @@ const Navigation = () => {
                 </button>
               ))}
               <div className="flex flex-col space-y-3 pt-6 border-t border-gray-100">
-                <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-full h-12 text-base">
+                <Button 
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-full h-12 text-base"
+                  onClick={(e) => {
+                    setMobileMenuOpen(false);
+                    scrollToWaitlist(e);
+                  }}
+                >
                   Join Waitlist
                 </Button>
               </div>

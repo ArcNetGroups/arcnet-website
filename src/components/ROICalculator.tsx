@@ -137,8 +137,21 @@ const ROICalculator = () => {
           <p className="text-lg text-gray-600 mb-6">
             Ready to unlock these results?
           </p>
-          <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-base md:text-lg px-8 md:px-10 py-3 md:py-4 h-auto rounded-full">
-            Explore Prime
+          <Button 
+            size="lg" 
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-base md:text-lg px-8 md:px-10 py-3 md:py-4 h-auto rounded-full"
+            onClick={(e) => {
+              e.preventDefault();
+              const waitlistSection = document.getElementById('early-access');
+              if (waitlistSection) {
+                window.scrollTo({
+                  top: waitlistSection.offsetTop - 100, // Adjust for any fixed header
+                  behavior: 'smooth'
+                });
+              }
+            }}
+          >
+            Join the Waitlist
             <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
           </Button>
         </div>

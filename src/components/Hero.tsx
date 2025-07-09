@@ -1,7 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Heart } from "lucide-react";
+import { scrollToWaitlist } from "@/utils/scrollToWaitlist";
 
 const Hero = () => {
   return (
@@ -32,11 +32,20 @@ const Hero = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center mb-12 md:mb-16 px-4">
-          <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-base md:text-lg px-8 md:px-10 py-3 md:py-4 h-auto rounded-full min-h-[48px]">
+          <Button 
+            size="lg" 
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-base md:text-lg px-8 md:px-10 py-3 md:py-4 h-auto rounded-full min-h-[48px]"
+            onClick={scrollToWaitlist}
+          >
             Join the Waitlist
             <ArrowRight className="ml-2 md:ml-3 h-4 w-4 md:h-5 md:w-5" />
           </Button>
-          <Button size="lg" variant="outline" className="text-base md:text-lg px-8 md:px-10 py-3 md:py-4 h-auto border-2 rounded-full min-h-[48px]">
+          <Button 
+            size="lg" 
+            variant="outline" 
+            className="text-base md:text-lg px-8 md:px-10 py-3 md:py-4 h-auto border-2 rounded-full min-h-[48px]"
+            onClick={scrollToWaitlist}
+          >
             Book a 15-min Founder Chat
           </Button>
         </div>

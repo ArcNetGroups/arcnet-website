@@ -1,4 +1,3 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail, Phone, MapPin } from "lucide-react";
@@ -63,11 +62,24 @@ const Footer = () => {
               Ready to Transform Your Coaching Business?
             </h3>
             <p className="text-xl text-blue-100 mb-8">
-              Join thousands of coaches already using Prime to build stronger connections with their audience.
+              Join hundreds of coaches already on the waitlist.
             </p>
             <div className="flex justify-center">
-              <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-3 h-auto">
-                Start Your Free Trial
+              <Button 
+                size="lg" 
+                className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-3 h-auto"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const waitlistSection = document.getElementById('early-access');
+                  if (waitlistSection) {
+                    window.scrollTo({
+                      top: waitlistSection.offsetTop - 100,
+                      behavior: 'smooth'
+                    });
+                  }
+                }}
+              >
+                Start Your Journey?
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </div>
@@ -80,7 +92,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <Logo className="mb-6" showText={true} size="md" />
             <p className="text-gray-400 mb-6 leading-relaxed">
-              The all-in-one platform for coaches and subject matter experts. 
+              The all-in-one platform for independent finance coaches. 
               Build stronger business connections and scale your expertise.
             </p>
             <div className="space-y-3">
@@ -90,11 +102,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
                 <Phone className="w-4 h-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+234 901-8780-687</span>
               </div>
               <div className="flex items-center space-x-3 text-gray-400">
                 <MapPin className="w-4 h-4" />
-                <span>San Francisco, CA</span>
+                <span>Lagos, Nigeria</span>
               </div>
             </div>
           </div>

@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface LogoProps {
@@ -15,10 +14,18 @@ const Logo: React.FC<LogoProps> = ({ className = '', showText = true, size = 'md
   };
 
   const textSizeClasses = {
-    sm: 'text-lg',
-    md: 'text-2xl',
-    lg: 'text-3xl'
+    sm: 'text-2xl',
+    md: 'text-3xl',
+    lg: 'text-4xl'
   };
+
+  const subtextSizeClasses = {
+    sm: 'text-[10px]',
+    md: 'text-xs',
+    lg: 'text-sm'
+  };
+
+  const textGradient = 'bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600';
 
   return (
     <div className={`flex items-center space-x-3 ${className}`}>
@@ -44,11 +51,13 @@ const Logo: React.FC<LogoProps> = ({ className = '', showText = true, size = 'md
 
       {/* Logo Text */}
       {showText && (
-        <div>
-          <span className={`${textSizeClasses[size]} font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent`}>
+        <div className="ml-3 flex flex-col">
+          <span className={`font-black tracking-tight ${textSizeClasses[size]} ${textGradient}`}>
             Prime
           </span>
-          <div className="text-xs text-gray-500 font-medium">by ArcnetLabs</div>
+          <span className={`text-gray-500 font-medium ${subtextSizeClasses[size]} mt-[-2px]`}>
+            by ArcnetLabs
+          </span>
         </div>
       )}
     </div>

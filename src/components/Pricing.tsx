@@ -1,8 +1,7 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, Star, ArrowRight, Zap } from "lucide-react";
+import { Check, Star, ArrowRight, Zap, Mail } from "lucide-react";
 
 const Pricing = () => {
   const plans = [
@@ -25,7 +24,7 @@ const Pricing = () => {
     },
     {
       name: "Professional",
-      price: "$10",
+      price: "$20",
       period: "/month",
       description: "Most popular for growing coaching businesses",
       features: [
@@ -37,16 +36,17 @@ const Pricing = () => {
         "Advanced analytics & reporting",
         "Priority support",
         "Custom branding",
-        "Integration with external tools"
+        "Integration with external tools",
+        "10% royalty on products sold"
       ],
       popular: true,
       cta: "Start Free Trial"
     },
     {
       name: "Enterprise",
-      price: "10%",
-      period: " transaction fee",
-      description: "Pay as you earn - perfect for scaling coaches",
+      price: "$50",
+      period: "/month",
+      description: "For established coaching businesses",
       features: [
         "Unlimited clients & coaches",
         "White-label solution",
@@ -57,10 +57,11 @@ const Pricing = () => {
         "Dedicated account manager",
         "24/7 phone support",
         "Custom integrations",
-        "Advanced security features"
+        "Advanced security features",
+        "10% royalty on products sold"
       ],
       popular: false,
-      cta: "Contact Sales"
+      cta: "Get Started"
     }
   ];
 
@@ -84,7 +85,7 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {plans.map((plan, index) => (
-            <Card key={index} className={plan.popular ? "border-blue-500 shadow-xl" : "shadow-md hover:shadow-lg transition-shadow"}>
+            <Card key={index} className={`flex flex-col h-full ${plan.popular ? "border-blue-500 shadow-xl" : "shadow-md hover:shadow-lg transition-shadow"}`}>
               <CardHeader className="text-center">
                 <CardTitle className="text-2xl font-bold text-gray-900 mb-2">
                   {plan.name}
@@ -101,27 +102,31 @@ const Pricing = () => {
                   <span className="text-lg text-gray-500 font-medium">{plan.period}</span>
                 </div>
               </CardHeader>
-              <CardContent className="p-6">
+              <CardContent className="p-6 flex flex-col flex-grow">
                 <ul className="space-y-3 mb-6">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-center text-gray-700">
-                      <Check className="w-4 h-4 mr-2 text-green-500" />
-                      {feature}
+                      <Check className="w-4 h-4 mr-2 text-green-500 flex-shrink-0" />
+                      <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-base font-medium rounded-full h-auto py-3 px-6">
-                  {plan.cta}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                <div className="mt-auto pt-4">
+                  <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-base font-medium rounded-full h-auto py-3">
+                    {plan.cta}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}
         </div>
 
         <div className="text-center mt-12 md:mt-16">
-          <p className="text-gray-500">
-            Not sure which plan is right for you? <a href="#" className="text-blue-600 hover:underline">Contact us</a> for a personalized recommendation.
+          <p className="text-gray-500 mb-8">
+            Not sure which plan is right for you? <a href="mailto:company@arcnetlabs.com" className="text-blue-600 hover:underline flex items-center justify-center">
+              <Mail className="w-4 h-4 mr-1" /> company@arcnetlabs.com
+            </a>
           </p>
         </div>
       </div>
