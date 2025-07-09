@@ -26,8 +26,7 @@ const Hero = () => {
         
         <div className="max-w-4xl mx-auto mb-8 md:mb-12">
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 leading-relaxed px-4">
-            Prime brings sessions, content, and community into one streamlined platform — 
-            built with love for coaches tired of messy Zoom + WhatsApp + Drive workflows.
+            Prime brings sessions, content, and community into one streamlined platform — helping independent coaches earn more, stress less, and ditch messy Zoom + WhatsApp + Drive workflows
           </p>
         </div>
         
@@ -48,22 +47,6 @@ const Hero = () => {
           >
             Book a 15-min Founder Chat
           </Button>
-        </div>
-        
-        {/* Trust Indicators */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8 text-sm md:text-base text-gray-500 px-4">
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-            <span className="font-medium">Free 14-day Trial</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-            <span className="font-medium">No Setup Fees</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-            <span className="font-medium">Cancel Anytime</span>
-          </div>
         </div>
       </div>
     </section>

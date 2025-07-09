@@ -11,8 +11,8 @@ const Pricing = () => {
       period: "",
       description: "Perfect for individual coaches getting started",
       features: [
-        "Up to 25 active clients",
-        "Unlimited 1-on-1 sessions",
+        "15 1-on-1 sessions",
+        "5 group sessions",
         "Basic scheduling & reminders",
         "Community hub (1 group)",
         "Content library (5GB storage)",
@@ -28,7 +28,7 @@ const Pricing = () => {
       period: "/month",
       description: "Most popular for growing coaching businesses",
       features: [
-        "Up to 100 active clients",
+        "Unlimited audience",
         "Unlimited sessions (1-on-1 & group)",
         "Advanced scheduling with AI optimization",
         "Multiple communities (up to 5)",
@@ -40,12 +40,12 @@ const Pricing = () => {
         "10% royalty on products sold"
       ],
       popular: true,
-      cta: "Start Free Trial"
+      cta: "Get Started"
     },
     {
       name: "Enterprise",
-      price: "$50",
-      period: "/month",
+      price: "Coming Soon",
+      period: "",
       description: "For established coaching businesses",
       features: [
         "Unlimited clients & coaches",
@@ -58,10 +58,10 @@ const Pricing = () => {
         "24/7 phone support",
         "Custom integrations",
         "Advanced security features",
-        "10% royalty on products sold"
+        "0% royalty on products sold"
       ],
       popular: false,
-      cta: "Get Started"
+      cta: "Contact Us"
     }
   ];
 
@@ -124,8 +124,16 @@ const Pricing = () => {
 
         <div className="text-center mt-12 md:mt-16">
           <p className="text-gray-500 mb-8">
-            Not sure which plan is right for you? <a href="mailto:company@arcnetlabs.com" className="text-blue-600 hover:underline flex items-center justify-center">
-              <Mail className="w-4 h-4 mr-1" /> company@arcnetlabs.com
+            Not sure which plan is right for you?{' '}
+            <a 
+              href="mailto:company@arcnetlabs.com" 
+              className="text-blue-600 hover:underline flex items-center justify-center"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = 'mailto:company@arcnetlabs.com';
+              }}
+            >
+              <Mail className="w-4 h-4 mr-1" /> Contact Us
             </a>
           </p>
         </div>

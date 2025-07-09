@@ -30,23 +30,69 @@ const Logo: React.FC<LogoProps> = ({ className = '', showText = true, size = 'md
   return (
     <div className={`flex items-center space-x-3 ${className}`}>
       {/* Logo Icon */}
-      <div className={`${sizeClasses[size]} bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 rounded-xl flex items-center justify-center shadow-lg relative overflow-hidden`}>
-        {/* Background pattern */}
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20"></div>
+      <div className={`${sizeClasses[size]} bg-gradient-to-br from-gray-900 via-black to-gray-800 rounded-xl flex items-center justify-center shadow-xl relative overflow-hidden`}>
+        {/* Background pattern with subtle gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-800/80 to-black/90"></div>
         
-        {/* Main logo symbol - stylized "P" */}
-        <div className="relative z-10 text-white font-bold text-lg flex items-center justify-center">
+        {/* Enhanced logo symbol with gradient "P" */}
+        <div className="relative z-10 w-full h-full flex items-center justify-center">
           <svg 
-            viewBox="0 0 24 24" 
-            className="w-6 h-6 fill-current"
+            viewBox="0 0 100 100" 
+            className="w-3/5 h-3/5"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M6 2h6c3.31 0 6 2.69 6 6 0 2.22-1.21 4.15-3 5.19V22h-3v-7H9v7H6V2zm3 3v5h3c1.66 0 3-1.34 3-3s-1.34-3-3-3H9z"/>
+            <defs>
+              <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="200%">
+                <stop offset="0%" stopColor="#ffffff" />
+                <stop offset="50%" stopColor="#f3f4f6" />
+                <stop offset="100%" stopColor="#9ca3af" />
+              </linearGradient>
+              <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#e5e7eb" />
+                <stop offset="50%" stopColor="#9ca3af" />
+                <stop offset="100%" stopColor="#4b5563" />
+              </linearGradient>
+              <linearGradient id="innerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="#f3f4f6" />
+                <stop offset="100%" stopColor="#9ca3af" />
+              </linearGradient>
+              <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="2" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+              </filter>
+            </defs>
+            
+            <g filter="url(#glow)">
+              {/* Main P shape with body gradient */}
+              <path 
+                d="M30 20h30c8.28 0 15 6.72 15 15s-6.72 15-15 15H50v30H30V20z" 
+                fill="url(#bodyGradient)"
+                stroke="rgba(255,255,255,0.15)"
+                strokeWidth="2"
+                strokeLinejoin="round"
+              />
+              
+              {/* Top curve highlight */}
+              <path 
+                d="M30 20h30c8.28 0 15 6.72 15 15s-6.72 15-15 15H50V20h-20z" 
+                fill="url(#mainGradient)"
+                fillOpacity="0.7"
+              />
+              
+              <path 
+                d="M50 20v30h10c4.14 0 7.5-3.36 7.5-7.5S64.14 35 60 35H50V20z" 
+                fill="url(#innerGradient)"
+                fillOpacity="0.8"
+              />
+            </g>
           </svg>
         </div>
         
         {/* Subtle shine effect */}
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/20 to-transparent"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 via-transparent to-transparent opacity-40"></div>
+        
+        {/* Subtle reflection */}
+        <div className="absolute top-0 left-0 w-1/2 h-1/2 bg-gradient-to-br from-white/5 to-transparent rounded-full transform translate-x-1/4 translate-y-1/4"></div>
       </div>
 
       {/* Logo Text */}
